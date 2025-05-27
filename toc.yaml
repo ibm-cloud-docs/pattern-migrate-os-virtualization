@@ -24,7 +24,7 @@ toc:
           label: topic-group-label
           topics:
           - topic.md
-      - release-notes.md
+      - overview.md
   - navgroup:
       id: architecture
       topics:
