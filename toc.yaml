@@ -30,6 +30,24 @@ toc:
       topics:
       - reference-architecture.md
   - navgroup:
+      id: plan
+      topics:
+      - topicgroup:
+          label: Design considerations
+          topics:
+          - topic: migration-design.md
+            navtitle: Migration
+          - topic: compute-design.md
+            navtitle: Compute
+          - topic: storage-design.md
+            navtitle: Storage
+          - topic: networking-design.md
+            navtitle: Networking
+          - topic: security-design.md
+            navtitle: Security
+          - topic: service-management-architecture.md
+            navtitle: Service management
+  - navgroup:
       id: deploy
       topics:
       - how-to.md
