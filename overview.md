@@ -28,6 +28,6 @@ Following the Architecture Framework, the `<Pattern Name>` covers design conside
 -   Networking: Enterprise Connectivity, Segmentation and Isolation, Cloud Native Connectivity, Load Balancing, DNS
 -   Security: Data Security, Identity and Access Management, Application Security, Infrastructure and Endpoint Security
 -   Resiliency: High Availability, Backup and Restore
--   Service Management: Monitoring, Logging, Auditing, Alerting
+-   Service Management: Observability, Monitoring, Logging, Auditing, Alerting
 
 The Architecture Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of "aspects" and "domains", which are technology-agnostic architectural areas that need to be considered for any enterprise solution. For more details, see [Introduction to the Architecture Framework](/docs/architecture-framework).
