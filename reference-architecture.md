@@ -1,61 +1,25 @@
 ---
 
-# The YAML header is required. For more information about the YAML header, see
-# https://test.cloud.ibm.com/docs-internal/writing?topic=writing-reference-architectures
-
 copyright:
-  years: 2023
-lastupdated: "2025-05-27"
+  years: 2025
+lastupdated: "2025-07-09"
 
-keywords: # Not typically populated
+keywords: virtualization, VMware, SDN, NSX, OpenShift
 
-subcollection: pattern-migrate-os-virtualization # Use deployable-reference-architectures, or the subcollection value from your toc.yaml file if docs-only.
+subcollection: pattern-migrate-vmware-workloads-redhat-openshift-virtualization
 
 authors:
-  - name: David Long
-    url: https://linkedin.com/in/sam-p-user
-  - name: "name"
-    url: "linkedIn profile URL"
+  - name: Esteban Arias
+    url: https://linkedin.com/in/eariasn01
 
-# The release that the reference architecture describes
 version: 1.0
 
-# Use if the reference architecture has deployable code.
-# Value is the URL to land the user in the IBM Cloud catalog details page for the deployable architecture.
-# See https://test.cloud.ibm.com/docs/get-coding?topic=get-coding-deploy-button
 deployment-url: url
 
-docs: https://cloud.ibm.com/docs/solution-guide
-
-image_source: https://github.com/terraform-ibm-modules/module/reference-architectures/xxx.svg
-
-related_links:
-  - title: 'Title'
-    url: 'https://url.com'
-    description: 'Description.'
-  - title: 'related or follow-on architectures'
-    url: 'https://url'
-    description: 'Description'
-
-# use-case from 'code' column in
-# https://github.ibm.com/digital/taxonomy/blob/main/topics/topics_flat_list.csv
-use-case:
-
-# industry from 'code' column in
-# https://github.ibm.com/digital/taxonomy/blob/main/industries/industries_flat_list.csv
-industry:
-
-# compliance from 'code' column in
-# https://github.ibm.com/digital/taxonomy/blob/main/compliance_entities/compliance_entities_flat_list.csv
-compliance:
-
-content-type: reference-architecture
-
-
-# For reference architectures in https://github.com/terraform-ibm-modules only.
-# All reference architectures stored in the /reference-architectures directory
-
-# Set production to true to publish the reference architecture to IBM Cloud docs.
+use-case: virtualization, hypervisor, migration, containers
+industry: FinancialSector, Manufacturing, Retail, Industrials, Communications
+compliance: 
+content-type: deployment
 
 production: false
 
@@ -65,40 +29,45 @@ production: false
 {{site.data.keyword.attribute-definition-list}}
 
 
+# Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift Virtualization
+{: #pattern-migrate-os-virtualization}
+{: toc-content-type="deployment"}
+{: toc-industry="FinancialSector, Manufacturing, Retail, Industrials, Communications"}
+{: toc-use-case="virtualization, hypervisor, migration, containers"}
+{: toc-compliance="ISOIEC27001"}
+{: toc-version="1.0"}
 
-# Title
-{: #title-id}
-{: toc-content-type="reference-architecture"}
-{: toc-industry="value"}
-{: toc-use-case="value"}
-{: toc-compliance="value"}
-{: toc-version="value"}
+Lift and shift enterprise grade VMware workloads from on premises or hyperscaler based environments to IBM Cloud to take advantage of the unique benefits of a hybrid cloud strategy and best in class modernization capabilities through Red Hat OpenShift Virtualization. Integrated into the broader IBM Cloud, with several offerings bring  to customers a known environment for their business applications while enabling access to new cloud technologies and innovations including IBM Watson for AI and platforms for new cloud native apps.
 
+OpenShift Virtualization, uses Kernel-based Virtual Machine (KVM) the trusted Linux kernel hypervisor, delivering enterprise-grade virtualization, for virtual machines, as native objects within OpenShift. Virtual machines within OpenShift Virtualization benefit from sophisticated scheduling and management capabilities, including host affinity, resource awareness, load balancing, and built-in high availability.
 
-
-:information_source: **Tip:** For more information about this template, see [Creating reference architectures](https://test.cloud.ibm.com/docs-internal/writing?topic=writing-reference-architectures).
-
-Include a short description, summary, or overview in a single paragraph that follows the title.
-
-After the introduction, include a summary of the typical use case for the architecture. The use case might include the motivation for the architecture composition, business challenge, or target cloud environments.
+Networking capabilities include connection to the integrated cluster software-defined network (SDN), enabling secure and controlled access to virtual machines through configurable network policies. Red Hat OpenShift, with its integrated OpenShift Virtualization capabilities, offers a unified platform for running both containerized and traditional virtual machine workloads.
 
 ## Architecture diagram
 {: #architecture-diagram}
 
-Include the architecture diagram SVG file that was created by using drawio and the IBM2 library.
 
-![Enter image alt text here.](example-architecture-diagram.svg "Title text that shows on hover here"){: caption="A description that prints on the page" caption-side="bottom"}
+The following diagram shows the high level reference architecture for this pattern:
 
-If you have a list or text to describe the diagram, include it here.
+![High level architecture diagram for the Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift Virtualization](/images/deployable-architecture-ocp-virtualization-cluster.svg "Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift Virtualization"){: caption="Migrate VMware Workloads to IBM Cloud Red Hat OpenShift Virtualization" caption-side="bottom"}
 
-## Design concepts
-{: #design-concepts}
 
-Customize the design requirement heat map template image and highlight the scope of the architecture. Publishing in IBM Cloud Docs requires a caption to meet accessibility requirements.
+## Design scope
+{: #design-scope}
 
-![Enter image alt text here.](heatmap.svg "Title text that shows on hover here"){: caption="A description that prints on the page" caption-side="bottom"}
+Following the [Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-taxonomy), Migrate VMware Workloads to IBM Cloud Red Hat OpenShift Virtualization covers design considerations and architecture decisions for the following aspects and domains:
 
-For more information about creating a design requirements heat map image, see [Design requirements heat map](https://test.cloud.ibm.com/docs/architecture-framework?topic=architecture-framework-heat-map).
+- Compute: Virtual servers, virtualization
+- Storage: Primary, Backup, Migration
+- Networking: Enterprise Connectivity, Edge Gateways, Cloud Native Connectivity, Load Balancing and Domain name system
+- Security: Data and Identity
+- Resiliency: Backup and Restore, Disaster Recovery, High Availability
+- Service Management: Monitoring, Logging, Alerting, Auditing/tracking, Event management and Management/Orchestration
+
+The Architecture Design Framework, described in [Introduction to the Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-intro), provides a consistent approach to design cloud solutions by addressing requirements across a pre-defined set of aspects and domains, which are technology-agnostic architectural areas that need to be considered for any enterprise solution. It can be used as a guide to make the necessary design and component choices to ensure that you have considered applicable requirements for each aspect and domain. After you have identified the applicable requirements and domains that are in scope, you can evaluate and select the best fit for purpose components for your enterprise cloud solution.
+
+
+![A screen shot of a computer Description automatically generated](images/heat-map-MV-OCP-V.svg){: caption="Migrate VMware Workloads to IBM Cloud Red Hat OpenShift Virtualization design scope" caption-side="bottom"}
 
 
 ## Requirements
