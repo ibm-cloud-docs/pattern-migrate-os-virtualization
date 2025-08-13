@@ -44,10 +44,10 @@ This is content under a second-level subheading.
 1.  Provision [**Cloud Automation for RedHat OpenShift Virtualization**](https://cloud.ibm.com/catalog/7a4d68b4-cf8b-40cd-a3d1-f49aff526eb3/architecture/deploy-arch-ibm-ocp-virtualization-e4e5b526-5a08-4d63-bea6-04417c30583e-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2c%2Fc2VhcmNoPXZpcnR1YWxpemF0aW9uI3NlYXJjaF9yZXN1bHRz) deployable architecture in a new or existing Project.
 2.  Once the deployable architecture is added to the project, fill in required and optional parameters.
 
-    For the OpenShift Virtualization Operator deployable architecture, the following parameters must be set:
+For the OpenShift Virtualization Operator deployable architecture, the following parameters must be set:
 
 -   Security tab: \`api_key\` or \`trusted_profile_id\`, this can be connected to a Secrets Manager instance to input or Trusted profiles.
--   Inputs tab: \`region\` and \`resource_group\`
+-   Inputs tab: \`region\` and \`resource_group\`.
 3.  Once the validation is successful, click “**Approve**” and add a comment. Then click “**Deploy**” to deploy the plan.
 
 ## Installing OpenShift MTV operator
