@@ -31,9 +31,9 @@ You need the following items to deploy and configure this reference architecture
 -   An [Trusted Profile](https://cloud.ibm.com/docs/secure-enterprise?topic=secure-enterprise-tp-project&interface=ui) for an alternate authentication for project-based access.
 -   An understanding of the [Planning for the landing zone deployable architectures](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/source/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-plan).
 
-### 
+###
 
-### 
+###
 
 ## Installing the OpenShift Virtualization Operator
 
@@ -46,9 +46,9 @@ This is content under a second-level subheading.
 
     For the OpenShift Virtualization Operator deployable architecture, the following parameters must be set:
 
--   Security tab: \`api_key\` or \`trusted_profile_id\`, This can be connected to a Secrets Manager instance to input or Trusted profiles.
+-   Security tab: \`api_key\` or \`trusted_profile_id\`, this can be connected to a Secrets Manager instance to input or Trusted profiles.
 -   Inputs tab: \`region\` and \`resource_group\`
-1.  Once the validation is successful, click “**Approve**” and add a comment. Then click “**Deploy**” to deploy the plan.
+3.  Once the validation is successful, click “**Approve**” and add a comment. Then click “**Deploy**” to deploy the plan.
 
 ## Installing OpenShift MTV operator
 
