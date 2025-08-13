@@ -37,7 +37,7 @@ You need the following items to deploy and configure this reference architecture
 
 ## Installing the OpenShift Virtualization Operator
 
-{: \#unique-id-4}
+{: \#unique-id-3}
 
 This is content under a second-level subheading.
 
@@ -49,3 +49,15 @@ This is content under a second-level subheading.
 -   Security tab: \`api_key\` or \`trusted_profile_id\`, This can be connected to a Secrets Manager instance to input or Trusted profiles.
 -   Inputs tab: \`region\` and \`resource_group\`
 1.  Once the validation is successful, click “**Approve**” and add a comment. Then click “**Deploy**” to deploy the plan.
+
+## Installing OpenShift MTV operator
+
+{: \#unique-id-4}
+
+To install and configure the MTV operator on OpenShift cluster, complete the following steps outlined in the [Installing MTV Operator installation guide](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/installing-the-operator#installing-mtv-operator_web).
+
+## Migrating VMWare Instances to OpenShift Virtualization
+
+{: \#unique-id-5}
+
+To migrate VMWare Instances for OpenShift Virtualization, complete the following steps outlined in the [Migrating virtual machines by using the MTV web console.](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console)
