@@ -15,7 +15,7 @@ subcollection: pattern-migrate-os-virtualization
 
 {: \#unique-id}
 
-This is a short description that introduces the content in this topic. {: shortdesc}
+Placeholder description. {: shortdesc}
 
 ## Before you begin
 
@@ -39,7 +39,7 @@ You need the following items to deploy and configure this reference architecture
 
 {: \#unique-id-3}
 
-This is content under a second-level subheading.
+Placeholder subheading text.
 
 1.  Provision [**Cloud Automation for RedHat OpenShift Virtualization**](https://cloud.ibm.com/catalog/7a4d68b4-cf8b-40cd-a3d1-f49aff526eb3/architecture/deploy-arch-ibm-ocp-virtualization-e4e5b526-5a08-4d63-bea6-04417c30583e-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2c%2Fc2VhcmNoPXZpcnR1YWxpemF0aW9uI3NlYXJjaF9yZXN1bHRz) deployable architecture in a new or existing Project.
 2.  Once the deployable architecture is added to the project, fill in required and optional parameters.
