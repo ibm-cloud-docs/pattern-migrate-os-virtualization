@@ -17,7 +17,7 @@ deployment-url: url
 
 use-case: virtualization, hypervisor, migration, containers
 industry: FinancialSector, Manufacturing, Retail, Industrials, Communications
-compliance: 
+compliance:
 content-type: deployment
 
 production: false
@@ -27,8 +27,12 @@ production: false
 {{site.data.keyword.attribute-definition-list}}
 
 # Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} OpenShift Virtualization
-
-{: \#pattern-migrate-os-virtualization} {: toc-content-type="deployment"} {: toc-industry="FinancialSector, Manufacturing, Retail, Industrials, Communications"} {: toc-use-case="virtualization, hypervisor, migration, containers"} {: toc-compliance="ISOIEC27001"} {: toc-version="1.0"}
+{: #pattern-migrate-os-virtualization}
+{: toc-content-type="deployment"}
+{: toc-industry="FinancialSector, Manufacturing, Retail, Industrials, Communications"}
+{: toc-use-case="virtualization, hypervisor, migration, containers"}
+{: toc-compliance="ISOIEC27001"}
+{: toc-version="1.0"}
 
 Lift and shift enterprise grade VMware workloads from on premises or hyperscaler based environments to IBM Cloud to take advantage of the unique benefits of a hybrid cloud strategy and best in class modernization capabilities through Red Hat OpenShift Virtualization. Integrated into the broader IBM Cloud, with several offerings bring to customers a known environment for their business applications while enabling access to new cloud technologies and innovations including IBM Watson for AI and platforms for new cloud native apps.
 
