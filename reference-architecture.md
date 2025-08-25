@@ -27,12 +27,8 @@ production: false
 {{site.data.keyword.attribute-definition-list}}
 
 # Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} OpenShift Virtualization
-{: #pattern-migrate-os-virtualization}
-{: toc-content-type="deployment"}
-{: toc-industry="FinancialSector, Manufacturing, Retail, Industrials, Communications"}
-{: toc-use-case="virtualization, hypervisor, migration, containers"}
-{: toc-compliance="ISOIEC27001"}
-{: toc-version="1.0"}
+
+{: \#pattern-migrate-os-virtualization} {: toc-content-type="deployment"} {: toc-industry="FinancialSector, Manufacturing, Retail, Industrials, Communications"} {: toc-use-case="virtualization, hypervisor, migration, containers"} {: toc-compliance="ISOIEC27001"} {: toc-version="1.0"}
 
 Lift and shift enterprise grade VMware workloads from on premises or hyperscaler based environments to IBM Cloud to take advantage of the unique benefits of a hybrid cloud strategy and best in class modernization capabilities through Red Hat OpenShift Virtualization. Integrated into the broader IBM Cloud, with several offerings bring to customers a known environment for their business applications while enabling access to new cloud technologies and innovations including IBM Watson for AI and platforms for new cloud native apps.
 
@@ -88,24 +84,24 @@ Update the following table with requirements for this architecture. Introduce th
 
 Update the following table below with components that are unique to this architecture. Introduce the table with a sentence. For example, "The following table outlines the products or services used in the architecture for each aspect."
 
-| Aspects                                                | Architecture components                                  | How the component is used                                                              |
-|--------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------------------------------------|
-| Compute                                                | PowerVS                                                  | Web, App, and database servers                                                         |
-| Storage                                                | PowerVS                                                  | Database servers shared storage for RAC                                                |
-|                                                        | VPC Block Storage                                        | Web app storage if neededt                                                             |
-| Networking                                             | VPC Virtual Private Network (VPN)                        | Remote access to manage resources in private network                                   |
-|                                                        | Virtual Private Gateway & Virtual Private Endpoint (VPE) | For private network access to Cloud Services, e.g., Key Protect, COS, etc.             |
-|                                                        | VPC Load Balancers                                       | Application Load Balancing for web servers, app servers, and database servers          |
-|                                                        | Public Gateway                                           | For web server access to the internet                                                  |
-| Security                                               | IAM                                                      | IBM Cloud Identity & Access Management                                                 |
-|                                                        | BYO Bastion Host on VPC VSI                              | Remote access with Privileged Access Management                                        |
-|                                                        | Key protect or HPCS                                      | Hardware security module (HSM) and Key Management Service                              |
-|                                                        | Secrets Manager                                          | Certificate and Secrets Management                                                     |
-| Resiliency                                             | PowerVS                                                  | Multiple PowerVS on separate physical servers with VM and Storage anti-affinity policy |
-| Service Management                                     | IBM Cloud Monitoring                                     | Apps and operational monitoring                                                        |
-|                                                        | IBM Log Analysis                                         | Apps and operational logs                                                              |
-|                                                        | Activity Tracker Event Routing                           | Audit logs                                                                             |
-| Other use if there is additional aspect(s) Name Aspect | Cell content                                             | Cell content                                                                           |
+| Aspects                                                | Architecture components                                  | How the component is used                                                                                                                      |
+|--------------------------------------------------------|----------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| Compute                                                | OpenShift Virtualization Operator                        | For virtual machine lifecycle, non-disruptive VM migration between bare metal nodes and active resource balancing across the bare metal nodes  |
+| Storage                                                | IBM Cloud File Storage for VPC                           | File storage providing NFS-based file storage                                                                                                  |
+|                                                        | Object Storage                                           | Backups, Archiving, logs (application, operational, and audit logs)                                                                            |
+| Networking                                             | VPC Virtual Private Network (VPN)                        | Remote access to manage resources in private network                                                                                           |
+|                                                        | Virtual Private Gateway & Virtual Private Endpoint (VPE) | For private network access to Cloud Services, e.g., Key Protect, COS, etc.                                                                     |
+|                                                        | VPC Load Balancers                                       | Application Load Balancing for web servers, app servers, and database servers                                                                  |
+|                                                        | Public Gateway                                           | For web server access to the internet                                                                                                          |
+| Security                                               | IAM                                                      | IBM Cloud Identity & Access Management                                                                                                         |
+|                                                        | BYO Bastion Host on VPC VSI                              | Remote access with Privileged Access Management                                                                                                |
+|                                                        | Key protect                                              | Key Management Service                                                                                                                         |
+|                                                        | Secrets Manager                                          | Certificate and Secrets Management                                                                                                             |
+| Resiliency                                             | Live migration                                           | Physical servers with VM and Storage anti-affinity policy                                                                                      |
+| Service Management                                     | IBM Cloud Monitoring                                     | Apps and operational monitoring                                                                                                                |
+|                                                        | IBM Log Analysis                                         | Apps and operational logs                                                                                                                      |
+|                                                        | Activity Tracker Event Routing                           | Audit logs                                                                                                                                     |
+| Other use if there is additional aspect(s) Name Aspect | Cell content                                             | Cell content                                                                                                                                   |
 
 {: caption="Components" caption-side="bottom"}
 
