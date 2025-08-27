@@ -1,30 +1,30 @@
 {
   "version": 2,
   "title": "Migrating VMware workloads to IBM Cloud Openshift Virtualization",
-  "introduction": "This is a description of what the user will be able to find in the content for your solution.",
-  "product_page": "https://ibm.com/cloud/solution-page",
-  "deployment_url": "https://cloud.ibm.com/catalog/content/url/to/deploy",
+  "introduction": "This is a reference architecture that describes the deployment architecture for migrating VMware workloads to IBM Cloud OpenShift Virtualization.",
+  "product_page": "https://cloud.ibm.com/docs/openshift?topic=openshift-oc-virtualization",
+  "deployment_url": "https://cloud.ibm.com/catalog/7a4d68b4-cf8b-40cd-a3d1-f49aff526eb3/architecture/deploy-arch-ibm-ocp-virtualization-e4e5b526-5a08-4d63-bea6-04417c30583e-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjYWxsX3Byb2R1Y3Rz",
   "section_topics": {
     "links": [
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Overview",
+        "href": "https://test.cloud.ibm.com/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-overview"
       },
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Reference Architecture",
+        "href": "https://test.cloud.ibm.com/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-migrate-vmware-workloads-to-ibm-cloud-openshift-virtualization"
       },
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Planning",
+        "href": "https://test.cloud.ibm.com/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-virtual-infrastructure-migration-planning"
       },
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "Deploying",
+        "href": "https://test.cloud.ibm.com/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-deploying-the-openshift-virtualization-operator"
       },
       {
-        "title": "Topic title",
-        "href": "/docs/overview?topic=overview-get-started-checklist"
+        "title": "References",
+        "href": "https://test.cloud.ibm.com/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-your-id"
       }
     ]
   },
@@ -36,7 +36,7 @@
       "type": "blog"
     },
     {
-      "title": "OpenShift Virtualization - Reference Implementation Guide",
+      "title": "Red Hat OpenShift Virtualization - Reference Implementation Guide",
       "description": "This document provides implementation guidelines, sample architecture, and best practices, regarding deploying Red Hat OpenShift as a hosting solution using OpenShift Virtualization.",
       "href": "https://access.redhat.com/articles/7067871",
       "type": "blog"
