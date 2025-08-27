@@ -8,23 +8,23 @@
     "links": [
       {
         "title": "Overview",
-        "href": "https://test.cloud.ibm.com/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-overview"
+        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-overview"
       },
       {
         "title": "Reference Architecture",
-        "href": "https://test.cloud.ibm.com/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-migrate-vmware-workloads-to-ibm-cloud-openshift-virtualization"
+        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-migrate-vmware-workloads-to-ibm-cloud-openshift-virtualization"
       },
       {
         "title": "Planning",
-        "href": "https://test.cloud.ibm.com/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-virtual-infrastructure-migration-planning"
+        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-virtual-infrastructure-migration-planning"
       },
       {
         "title": "Deploying",
-        "href": "https://test.cloud.ibm.com/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-deploying-the-openshift-virtualization-operator"
+        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-deploying-the-openshift-virtualization-operator"
       },
       {
         "title": "References",
-        "href": "https://test.cloud.ibm.com/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-your-id"
+        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-your-id"
       }
     ]
   },
