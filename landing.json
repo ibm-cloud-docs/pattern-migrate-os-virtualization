@@ -30,17 +30,16 @@
   },
   "section_highlights": [
     {
-      "title": "Resource title",
-      "description": "Short description of resource content.",
-      "href": "https://www.example.ibm.com/link/to/resource",
+      "title": "Red Hat Migrate from VMware to OpenShift ",
+      "description": "How to migrate VMs from VMware to Red Hat OpenShift Virtualization",
+      "href": "https://www.redhat.com/en/technologies/cloud-computing/openshift/migrate-vmware-to-openshift-virtualization",
       "type": "blog"
     },
     {
-      "title": "Db2 Optimization Techniques for SAP Database Migration to the Cloud",
-      "description": "This IBM Redbook provides in-depth recommendations for the source system database export.",
-      "href": "https://www.redbooks.ibm.com/abstracts/sg248531.html",
-      "type": "redbook",
-      "recommended": true
+      "title": "OpenShift Virtualization - Reference Implementation Guide",
+      "description": "This document provides implementation guidelines, sample architecture, and best practices, regarding deploying Red Hat OpenShift as a hosting solution using OpenShift Virtualization.",
+      "href": "https://access.redhat.com/articles/7067871",
+      "type": "blog"
     }
   ],
   "section_architectures": [
