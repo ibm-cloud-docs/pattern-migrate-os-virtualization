@@ -45,8 +45,8 @@
   ],
   "section_architectures": [
     {
-      "title": "Red Hat OpenShift on VPC",
-      "href": "/docs/pattern-openshift-vpc-mz-resiliency?topic=pattern-openshift-vpc-mz-resiliency-openshift-on-vpc",
+      "title": "Red Hat OpenShift Container Platform on VPC landing zone ",
+      "href": "/docs/deployable-reference-architectures?topic=deployable-reference-architectures-ocp-ra",
       "deployable": true
     },
     {
@@ -60,29 +60,29 @@
       "deployable": true
     },
     {
-      "title": "Acme Test on Power Virtual Servers",
-      "href": "/docs/acme-test?topic=acme-test-reference-architecture",
-      "deployable": true
+      "title": "Red Hat OpenShift on VPC",
+      "href": "/docs/pattern-openshift-vpc-mz-resiliency?topic=pattern-openshift-vpc-mz-resiliency-openshift-on-vpc",
+      "deployable": false
     }
   ],
   "section_updates": {
-    "view_more": "/docs/overview?topic=overview-whatsnew",
+    "view_more": "/docs/openshift?topic=openshift-openshift-relnotes",
     "tiles": [
       {
-        "date": "07 August 2024",
-        "title": "Experimental: Access resources from the Resources tab"
+        "date": "8 August 2025",
+        "title": "You can use trusted profiles to control access to your resources, including components such as Block Storage, File Storage, or Cloud Object"
       },
       {
-        "date": "07 August 2024",
-        "title": "View counts for all resources in the resource summary widget"
+        "date": "18 July 2025",
+        "title": "Baremetal worker nodes for VPC are now available."
       },
       {
-        "date": "17 June 2024",
-        "title": "Experimental: Using AI to answer your questions about IBM Cloud"
+        "date": "27 May 2025",
+        "title": "New! Intel AI Accelerators (Gaudi 3)."
       },
       {
-        "date": "17 June 2024",
-        "title": "Changes to IBM Cloud projects API method to list all deployed resources"
+        "date": "21 April 2025",
+        "title": "Virtualize and containerize together: Red Hat OpenShift Virtualization is now available on IBM Cloud"
       }
     ]
   }
