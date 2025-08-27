@@ -45,8 +45,8 @@
   ],
   "section_architectures": [
     {
-      "title": "Acme Test on VPC",
-      "href": "/docs/acme-test?topic=acme-test-reference-architecture",
+      "title": "Red Hat OpenShift on VPC",
+      "href": "/docs/pattern-openshift-vpc-mz-resiliency?topic=pattern-openshift-vpc-mz-resiliency-openshift-on-vpc",
       "deployable": true
     },
     {
