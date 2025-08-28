@@ -42,7 +42,7 @@ toc:
           - topic: storage-design.md
             navtitle: Storage
           - topic: networking-design.md
-            navtitle: Network
+            navtitle: Networking
           - topic: security-design.md
             navtitle: Security
           - topic: service-management-design.md
