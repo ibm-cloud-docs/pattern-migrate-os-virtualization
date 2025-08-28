@@ -16,12 +16,10 @@ keywords:
 # References
 {: #references}
 
-[IBM Cloud Virtual Private Cloud (VPC) Infrastructure environment introduction](https://cloud.ibm.com/docs/sap?topic=sap-vpc-env-introduction)
+[Understanding of OpenShift virtualization](https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/virtualization/about)
 
-[IBM Cloud for SAP Get Started](https://cloud.ibm.com/docs/sap?topic=sap-get-started)
+[Installing OpenShift virtualization on IBM Cloud](https://cloud.ibm.com/docs/openshift?topic=openshift-oc-virtualization)
 
-[Veeam Plug-ins for Enterprise Applications](https://helpcenter.veeam.com/docs/backup/plugins/overview.html?ver=120)
+[OpenShift Virtualization Architecture Guide](https://access.redhat.com/articles/7119411)
 
-[Sizing process for SAP Systems](https://cloud.ibm.com/docs/sap?topic=sap-sizing&interface=ui)
-
-[FAQ -- SAP on IBM Cloud](https://cloud.ibm.com/docs/sap?topic=sap-faq-ibm-cloud-for-sap)
+[OpenShift Virtualization - Cluster Sizing Guide](https://access.redhat.com/articles/7107457)
