@@ -18,7 +18,7 @@ deployment-url: url
 
 use-case: virtualization, hypervisor, migration, containers
 industry: FinancialSector, Manufacturing, Retail, Industrials, Communications
-compliance: 
+compliance:
 content-type: deployment
 
 production: false
@@ -27,7 +27,7 @@ production: false
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Network design
+## Network design
 {: #network-design}
 
 The underlying architecture utilizes an existing deployment of a Red Hat OpenShift cluster with bare metal worker nodes on IBM Cloud, within a Virtual Private Cloud (VPC) environment. The VPC is configured within a specific region and organized under a designated resource group. OpenShift is deployed within the VPC and spread across a zone, hosting multiple Bare Metal Worker Nodes.
@@ -44,7 +44,7 @@ In Migration Toolkit for Virtualization (MTV), virtual machine migrations are or
 
 Red Hat OpenShift implements a distinct networking model centered around a dedicated pod network, which isolates microservices within the cluster. Application traffic is managed through software-defined abstractions known as Services, which act as internal load balancers. These Services are discoverable within the cluster and can be externally exposed via Routes, which bind DNS names to ingress traffic. This architecture decouples service identity from underlying network topology, rendering static IP addresses irrelevant. Instead, OpenShift dynamically manages service-to-pod relationships, ensuring high availability and scalability through its integrated SDN and routing mechanisms
 
-# Virtual machine configuration
+## Virtual machine configuration
 {: #virtual-machine-configuration}
 
 Red Hat Enterprise Linux (RHEL), leveraging the udev device manager and the underlying Linux kernel, assigns network interface names based on a set of deterministic rules derived from hardware topology and driver characteristics. For instance, on a RHEL 9 system running within a VMware environment, a NIC utilizing the VMXNET driver may be enumerated as ens192, reflecting predictable naming conventions introduced by systemd and udev to replace legacy ethX identifiers.
