@@ -16,7 +16,7 @@ keywords:
 # References
 {: #references}
 
-[Understanding of OpenShift virtualization](https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/virtualization/about)
+[Introduction to Red Hat OpenShift Virtualization](https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html/virtualization/index)
 
 [Installing OpenShift virtualization on IBM Cloud](https://cloud.ibm.com/docs/openshift?topic=openshift-oc-virtualization)
 
