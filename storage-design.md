@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2023
+  years: 2025
 lastupdated: "2025-08-28"
 
 subcollection: pattern-sap-on-vpc
