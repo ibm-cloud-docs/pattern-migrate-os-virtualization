@@ -36,9 +36,9 @@
       "type": "blog"
     },
     {
-      "title": "Red Hat OpenShift Virtualization - Reference Implementation Guide",
-      "description": "This document provides implementation guidelines, sample architecture, and best practices, regarding deploying Red Hat OpenShift as a hosting solution using OpenShift Virtualization.",
-      "href": "https://access.redhat.com/articles/7067871",
+      "title": "Red Hat OpenShift Virtualization - Architecture Guide",
+      "description": "This document provides opinionated architectural guidelines for deploying Red Hat OpenShift as a platform for virtualization workloads using OpenShift Virtualization.",
+      "href": "https://access.redhat.com/sites/default/files/attachments/openshift_virtualization_architecture_guide_v1.0.0.pdf",
       "type": "blog"
     }
   ],
