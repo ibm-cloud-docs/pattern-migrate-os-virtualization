@@ -15,10 +15,22 @@ keywords:
 
 {: \#compute-design}
 
-Machine Pool Architecture
 
-Multi-az resiliency and placement
+1.  OpenShift Cluster design points
 
-Auto-scaling and capacity planning
+Define whether environments workloads (PROD, PRE-PROD, UAT, TEST) are run on shared worker nodes using node labeling and taints.
 
-Node sizing and Instance type
+Define if tenant cluster isolation is required for compliance.
+
+Ensure cluster design responds to isolation, availability, scalability and compliance requirements.
+
+
+
+1.  Worker Pool
+
+Define if virtualized workloads (VMs) run on dedicated worker pools or shared pools with container workloads. Best practice is to use node labels, taints and tolerations to control VM placement and avoid interference with container workloads.
+
+
+1.  Worker node profile
+
+Define
