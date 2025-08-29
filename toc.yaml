@@ -42,7 +42,7 @@ toc:
           - topic: security-design.md
             navtitle: Security
           - topic: service-management-design.md
-            navtitle: Service management
+            navtitle: Networking
       - topicgroup:
           label: Architecture decisions
           topics:
