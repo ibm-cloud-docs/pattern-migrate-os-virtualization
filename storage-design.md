@@ -39,7 +39,7 @@ For storage solutions, IBM Cloud offers a comprehensive set of options optimized
 
 These managed add-ons enable enterprises to efficiently deploy and manage storage and infrastructure capabilities while leveraging the automation and resilience of OpenShift and IBM Cloud.
 
-**References**
+**References:**
 {: #storage-references}  
 [Enable or Disable the IBM managed Storage Add-Ons](https://cloud.ibm.com/docs/openshift?topic=openshift-storage-operator&interface=ui)  
 [IBM Cloud Block Storage for VPC Cluster](https://cloud.ibm.com/docs/openshift?group=setting-up-block-storage-for-vpc)  
