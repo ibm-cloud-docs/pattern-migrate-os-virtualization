@@ -35,14 +35,6 @@ toc:
             navtitle: Migration
           - topic: compute-design.md
             navtitle: Compute
-          - topic: networking-design.md
-            navtitle: Networking
-          - topic: storage-design.md
-            navtitle: Storage
-          - topic: security-design.md
-            navtitle: Security
-          - topic: service-management-design.md
-            navtitle: Service management
       - topicgroup:
           label: Architecture decisions
           topics:
