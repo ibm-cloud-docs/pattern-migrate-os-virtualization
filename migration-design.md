@@ -21,5 +21,20 @@ The migration of VMware workloads to {{site.data.keyword.Bluemix_notm}} OpenShif
 
 ![Migrate VMWare to Openshift Virtualization Phases](images/migvmwocpvibmcloud.svg){: caption="Migrate VMWare workloads to Openshift Virtualization Phased approach" caption-side="bottom"}
 
-* Discovery Assess Phase 1:
-Discovery: Data is collected across platform, operations and application teams to understand the as-is VMware operating processes, automation and IT integration with the workload applications. Identify priorities such as slow responses to business needs, complexity of accelerating application modernization programs. Identify and document current infrastructure, applications, relationships, and dependencies including drift from the expected business required state. The key to data collection for the VMware on-premises or colocated platform is to an extraction tool such as RVtools.
+1.  Phase 1 Discovery and Assess
+
+Data is collected across platform, operations and application teams to understand the as-is VMware operating processes, automation and IT integration with the workload applications.
+
+Extract and document VMware platform inventory and ressource allocation, typically using RVTools.
+
+Identify priorities such as slow responses to business needs, complexity of accelerating application modernization programs.
+
+Identify and document current infrastructure, applications, relationships, and dependencies including drift from the expected business required state.
+
+Identify use case for proof of concept (POC).
+
+Document day 2 operation requirements including, automation, configuration management, observability, disaster recovery.
+
+Document security and compliance requirements.
+
+Document licensing requirements.
