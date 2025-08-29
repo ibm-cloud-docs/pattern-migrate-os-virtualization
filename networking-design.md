@@ -11,7 +11,7 @@ keywords:
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Service management design
+# Network Design
 
 {: \#service-management-design}
 
