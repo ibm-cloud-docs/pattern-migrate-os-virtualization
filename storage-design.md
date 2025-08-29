@@ -35,8 +35,7 @@ For storage solutions, IBM Cloud offers a comprehensive set of options optimized
 | **IBM Storage Operator** | Automates storage provisioning and lifecycle management within OpenShift | Kubernetes-native workflows, scaling, configuration, automation |
 | **Block Storage for VPC** | High-performance block volumes for databases, stateful apps, and VMs | Dynamic expansion, cross-zone replication, snapshots, encryption at rest |
 | **File Storage for VPC** | Network-attached storage with NFS support, enabling concurrent access across multiple VPC instances | High availability, scalable capacity, snapshots, replication, access control |
-| **OpenShift Data Foundation (ODF)** | Software-defined storage supporting block, file, and object storage | Replication, erasure coding, snapshots, self-healing, persistent storage for containers & VMs | 
-{: caption="Table 1. Managed Storage Add-Ons" caption-side="bottom"}
+| **OpenShift Data Foundation (ODF)** | Software-defined storage supporting block, file, and object storage | Replication, erasure coding, snapshots, self-healing, persistent storage for containers & VMs |  
 
 These managed add-ons enable enterprises to efficiently deploy and manage storage and infrastructure capabilities while leveraging the automation and resilience of OpenShift and IBM Cloud.
 
