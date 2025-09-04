@@ -29,10 +29,6 @@ You need the following items to deploy and configure this reference architecture
 -   An [Trusted Profile](https://cloud.ibm.com/docs/secure-enterprise?topic=secure-enterprise-tp-project&interface=ui) for an alternate authentication for project-based access.
 -   An understanding of the [Planning for the landing zone deployable architectures](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/source/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-plan).
 
-###
-
-###
-
 ## Installing the OpenShift Virtualization Operator
 {: #unique-id-3}
 
