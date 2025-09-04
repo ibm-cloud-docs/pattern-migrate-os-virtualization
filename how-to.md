@@ -13,9 +13,6 @@ subcollection: pattern-migrate-os-virtualization
 
 # Deploying the OpenShift Virtualization Operator
 
-{: \#unique-id}
-
-Placeholder description. {: shortdesc}
 
 ## Before you begin
 
