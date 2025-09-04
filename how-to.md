@@ -79,6 +79,4 @@ To migrate VMWare Instances for OpenShift Virtualization, complete the following
 
 {: \#unique-id-7}
 
-Note: To add additional worker nodes into the cluster, please follow the steps
-
 -   [Adding worker nodes to VPC clusters](https://cloud.ibm.com/docs/openshift?topic=openshift-add-workers-vpc)
