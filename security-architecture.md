@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2023
+  years: 2025
 lastupdated: "2023-12-18"
 
 subcollection: pattern-vpc-vsi-multizone-resiliency
@@ -12,6 +12,7 @@ keywords:
 
 # Architecture decisions for security
 {: #security-architecture}
+
 
 
 The following are security architecture decisions for the pattern name.

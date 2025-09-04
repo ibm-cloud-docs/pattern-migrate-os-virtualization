@@ -12,12 +12,12 @@ subcollection: pattern-migrate-os-virtualization
 {{site.data.keyword.attribute-definition-list}}
 
 # Deploying the OpenShift Virtualization Operator
-{: \#unique-id}
+{: #unique-id}
 
 Placeholder description. {: shortdesc}
 
 ## Before you begin
-{: \#unique-id-2}
+{: #unique-id-2}
 
 You need the following items to deploy and configure this reference architecture:
 
@@ -34,7 +34,7 @@ You need the following items to deploy and configure this reference architecture
 ###
 
 ## Installing the OpenShift Virtualization Operator
-{: \#unique-id-3}
+{: #unique-id-3}
 
 Placeholder subheading text.
 
@@ -48,14 +48,12 @@ For the OpenShift Virtualization Operator deployable architecture, the following
 3.  Once the validation is successful, click “**Approve**” and add a comment. Then click “**Deploy**” to deploy the plan.
 
 ## Installing OpenShift MTV operator
-
-{: \#unique-id-4}
+{: #unique-id-4}
 
 To install and configure the MTV operator on OpenShift cluster, complete the following steps outlined in the [Installing MTV Operator installation guide](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/installing-the-operator#installing-mtv-operator_web).
 
 ## Creating a Transit Gateway Connection
-
-{: \#unique-id-5}
+{: #unique-id-5}
 
 To connect the OpenShift Virtualization cluster to the source VMware cluster in either IBM Cloud Classic or the Enterprise location, complete a transit gateway connection.
 
@@ -63,8 +61,7 @@ To connect the OpenShift Virtualization cluster to the source VMware cluster in 
 -   A [Transit Gateway](https://cloud.ibm.com/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway&interface=ui#tg-ui-creating-transit-gateway) request is needed for a network connection to another account
 
 ## Migrating VMWare Instances to OpenShift Virtualization
-
-{: \#unique-id-6}
+{: #unique-id-6}
 
 To migrate VMWare Instances for OpenShift Virtualization, complete the following steps outlined in the [Migrating virtual machines by using the MTV web console.](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console)
 
@@ -73,6 +70,6 @@ To migrate VMWare Instances for OpenShift Virtualization, complete the following
 3.  Then you can [Run your Migration plan](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console#running-migration-plan_mtv) and view within the MTV web Console.
 
 ## Additional references
-{: \#unique-id-7}
+{: #unique-id-7}
 
 -   [Adding worker nodes to VPC clusters](https://cloud.ibm.com/docs/openshift?topic=openshift-add-workers-vpc)

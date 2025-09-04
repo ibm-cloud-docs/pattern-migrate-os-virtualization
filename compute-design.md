@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2023
-lastupdated: "2023-12-28"
+  years: 2025
+lastupdated: "2025-09-04"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -12,8 +12,7 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Compute design
-
-{: \#compute-design}
+{: #compute-design}
 
 
 1.  OpenShift Cluster design points

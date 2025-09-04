@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2023
-lastupdated: "2023-12-26"
+  years: 2025
+lastupdated: "2025-09-04"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -12,10 +12,10 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Migrate VMWare workloads to IBM Cloud OpenShift Planning
+{: #migration-design}
 
-{: \#migration-design}
-
-**Phased Migration Approach**
+## Phased Migration Approach
+{: #phased-migration}
 
 The migration of VMware workloads to {{site.data.keyword.Bluemix_notm}} OpenShift Virtualization is proposed in a 4 phase migration program approach.
 
