@@ -71,6 +71,14 @@ To connect the OpenShift Virtualization cluster to the source VMware cluster in 
 
 To migrate VMWare Instances for OpenShift Virtualization, complete the following steps outlined in the [Migrating virtual machines by using the MTV web console.](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console)
 
-1.  Add an [OpenShift Virtualization provider](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console#adding-virt-provider_mtv).
-2.  Create a [Migration Plan.](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console#creating-migration-plan_mtv)
-3.  [Run your Migration plan](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console#running-migration-plan_mtv) and view within the MTV web Console.
+1.  Start by adding an [OpenShift Virtualization provider](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console#adding-virt-provider_mtv).
+2.  Next, create a [Migration Plan.](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console#creating-migration-plan_mtv)
+3.  Then you can [Run your Migration plan](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console#running-migration-plan_mtv) and view within the MTV web Console.
+
+## Additional references
+
+{: \#unique-id-7}
+
+Note: To add additional worker nodes into the cluster, please follow the steps
+
+-   [Adding worker nodes to VPC clusters](https://cloud.ibm.com/docs/openshift?topic=openshift-add-workers-vpc)
