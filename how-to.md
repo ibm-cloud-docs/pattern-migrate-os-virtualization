@@ -59,8 +59,8 @@ To install and configure the MTV operator on OpenShift cluster, complete the fol
 
 To connect the OpenShift Virtualization cluster to the source VMware cluster in either IBM Cloud Classic or the Enterprise location, complete a transit gateway connection.
 
--   A [Transit Gateway](https://cloud.ibm.com/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway&interface=ui#tg-ui-creating-transit-gateway) request is needed for a network connection to another account
 -   [A VPC](https://cloud.ibm.com/docs/transit-gateway?topic=transit-gateway-adding-cross-account-connections&interface=ui#tg-ui-adding-cross-account-connection-transit-gateway) network connection configuration or a [Direct Link](https://cloud.ibm.com/docs/dl?topic=dl-cross-account-virtual-connection-vpc&interface=ui) network configuration.
+-   A [Transit Gateway](https://cloud.ibm.com/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway&interface=ui#tg-ui-creating-transit-gateway) request is needed for a network connection to another account
 
 ## Migrating VMWare Instances to OpenShift Virtualization
 
