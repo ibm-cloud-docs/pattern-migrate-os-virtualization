@@ -1,11 +1,11 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-02"
+lastupdated: "2025-09-04"
 
 keywords: virtualization, VMware, SDN, NSX, OpenShift
 
-subcollection: pattern-migrate-vmware-workloads-redhat-openshift-virtualization
+subcollection: pattern-migrate-os-virtualization
 
 authors:
   - name: Esteban Arias

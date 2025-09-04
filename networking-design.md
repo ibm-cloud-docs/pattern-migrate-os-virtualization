@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2023
-lastupdated: "2023-12-26"
+  years: 2025
+lastupdated: "2025-09-04"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -12,11 +12,6 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Network Design
-
-{: \#service-management-design}
-
-
-## Network design
 {: #network-design}
 
 The underlying architecture utilizes an existing deployment of a Red Hat OpenShift cluster with bare metal worker nodes on IBM Cloud, within a Virtual Private Cloud (VPC) environment. The VPC is configured within a specific region and organized under a designated resource group. OpenShift is deployed within the VPC and spread across a zone, hosting multiple Bare Metal Worker Nodes.

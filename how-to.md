@@ -1,6 +1,6 @@
 ---
 copyright:
-  years: 2024
+  years: 2025
 lastupdated: "2025-09-04"
 
 keywords:
@@ -12,10 +12,11 @@ subcollection: pattern-migrate-os-virtualization
 {{site.data.keyword.attribute-definition-list}}
 
 # Deploying the OpenShift Virtualization Operator
+{: \#unique-id}
 
+Placeholder description. {: shortdesc}
 
 ## Before you begin
-
 {: \#unique-id-2}
 
 You need the following items to deploy and configure this reference architecture:
@@ -33,7 +34,6 @@ You need the following items to deploy and configure this reference architecture
 ###
 
 ## Installing the OpenShift Virtualization Operator
-
 {: \#unique-id-3}
 
 Placeholder subheading text.
@@ -73,7 +73,6 @@ To migrate VMWare Instances for OpenShift Virtualization, complete the following
 3.  Then you can [Run your Migration plan](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console#running-migration-plan_mtv) and view within the MTV web Console.
 
 ## Additional references
-
 {: \#unique-id-7}
 
 -   [Adding worker nodes to VPC clusters](https://cloud.ibm.com/docs/openshift?topic=openshift-add-workers-vpc)

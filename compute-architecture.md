@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2023
-lastupdated: "2023-12-26"
+  years: 2025
+lastupdated: "2025-09-04"
 
-subcollection: pattern-sap-on-vpc
+subcollection: pattern-migrate-os-virtualization
 
 keywords:
 
