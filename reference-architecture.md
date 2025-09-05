@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-04"
+lastupdated: "2025-09-05"
 
 keywords: virtualization, VMware, SDN, NSX, OpenShift
 
@@ -68,7 +68,7 @@ Update the following table with requirements for this architecture. Introduce th
 
 | Aspect             | Requirements                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Compute            | Provide a single orchestration platform, for deploying, managing, scaling virtual machines and container instances. \\n Provide for VM migration of live virtual machines between hosting nodes. \\n Provide active compute resource balancing across hosting nodes. \\n Maintain current workload environments segregation, segmentation for compliance. \\n Maintain virtualized workload high availability service level agreement.                                                                                                                                                                                                                                                                 |
+| Compute            | Provide a single orchestration platform, for deploying, managing, scaling virtual machines and container instances. \\n Provide for VM migration of live virtual machines between hosting nodes. \\n Provide dynamic resource allocation and scheduling across worker pools. \\n Maintain current workload environments segregation, segmentation for compliance. \\n Maintain virtualized workload high availability service level agreement.                                                                                                                                                                                                                                                                 |
 | Storage            | Provide storage that meets the application and database performance requirements. \\n Provide policy-based storage management.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | Networking         | Deploy workloads in isolated environment and enforce information flow policies. \\n Provide secure, encrypted connectivity to the cloud’s private network for management purposes. \\n Distribute incoming application requests across available compute resources. \\n Provide public and private DNS resolution to support use of hostnames instead of IP addresses.                                                                                                                                                                                                                                                                                                                                 |
 | Security           | Ensure all operator actions are executed securely through a bastion host. \\n Protect the boundaries of the application against denial-of-service and application-layer attacks. \\n Encrypt all application data in transit and at rest to protect from unauthorized disclosure. \\n Encrypt all backup data to protect from unauthorized disclosure. \\n Encrypt all security data (operational and audit logs) to protect from unauthorized disclosure. \\n Encrypt all data using customer managed keys to meet regulatory compliance requirements for additional security and customer control. \\n Protect secrets through their entire lifecycle and secure them using access control measures. |
@@ -102,14 +102,5 @@ Update the following table below with components that are unique to this archite
 | Other use if there is additional aspect(s) Name Aspect | Cell content                                             | Cell content                                                                                                                                                                  |
 {: caption="Components" caption-side="bottom"}
 
-## Compliance
-{: #compliance}
-
-*Optional section.* Feedback from users implies that architects want only the high-level compliance items and links off to control details that team members can review. Include the list of control profiles or compliance audits that this architecture meets. For controls, provide "learn more" links to the control library that is published in the IBM Cloud Docs. For audits, provide information about the compliance item.
-
-## Next steps
-{: #next-steps}
-
-*Optional section.* Include links to your deployment guide or next steps to get started with the architecture.
 
 :exclamation: **Important:** Rename this file `<architecture-name>.md`. For deployable architectures, `<architecture-name>` is the same as the deployable architecture name.
