@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-04"
+lastupdated: "2025-09-05"
 
 keywords:
 
@@ -14,7 +14,7 @@ subcollection: pattern-migrate-os-virtualization
 # Deploying the OpenShift Virtualization Operator
 {: #unique-id}
 
-Placeholder description. {: shortdesc}
+You can migrate VMWare workloads from on-premises, co-located or IBM Cloud Classic, using the IBM Cloud OpenShift Virtualization operator and Migration Toolkit for Virtualization operator. {: shortdesc}
 
 ## Before you begin
 {: #unique-id-2}
