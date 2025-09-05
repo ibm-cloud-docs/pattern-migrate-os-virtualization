@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-04"
+lastupdated: "2025-09-05"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -14,22 +14,10 @@ keywords:
 # Compute design
 {: #compute-design}
 
+A successful migration from VMware to IBM Cloud OpenShift Virtualization should consider the existing compliance boudaries, availability service level agreements, and current workload density to cpu oversubscription ratios.
 
-1.  OpenShift Cluster design points
+-	**Maintain virtualized workload segmentation for compliance:** To preserve existing compliance boundaries and workload segmentation, VMware production clusters can be mapped to IBM Cloud OpenShift Virtualization clusters. This approach allows for regulatory and operational controls - such as tenant isolation are maintained. Additionaly, existing VMware cluster vLans and vSphere folder structures can be mapped to OpenShift projects, namespaces and network policies to maintain auditability and compliance posture.
 
-Define whether environments workloads (PROD, PRE-PROD, UAT, TEST) are run on shared worker nodes using node labeling and taints.
+-	**High availability and resiliency of virtualized workloads:**To meet existing workload availability service level agreements the OpenShift Virtualization clusters should be sized to tolerate node failures. Features such as Node health check and fence agent remiation operators can detect node failures or hung nodes. To tolorate zone level outages, you can use soft eviction thresholds set below the service level agreement defined, to trigger live migrations avoiding workload downtime.
 
-Define if tenant cluster isolation is required for compliance.
-
-Ensure cluster design responds to isolation, availability, scalability and compliance requirements.
-
-
-
-1.  Worker Pool
-
-Define if virtualized workloads (VMs) run on dedicated worker pools or shared pools with container workloads. Best practice is to use node labels, taints and tolerations to control VM placement and avoid interference with container workloads.
-
-
-1.  Worker node profile
-
-Define
+-	**Optimize compute ressource utilisation in worker node pools:**To preserve compute efficiency, maximise virtual instance density and  reduce stranded resources, the worker node pools should be sized and grouped based on workload caracteristics. Node labels and selectors can be used to create logical pools for high-memory, GPU or latency sensitive applications. Oversubscription stategies can be applied with observability tools and descheduler policies to maintain balenced CPU usage.
