@@ -31,8 +31,6 @@ toc:
       - topicgroup:
           label: Design considerations
           topics:
-          - topic: migration-design.md
-            navtitle: Migration
           - topic: compute-design.md
             navtitle: Compute
           - topic: storage-design.md
@@ -54,6 +52,11 @@ toc:
             navtitle: Security
           - topic: service-management-architecture.md
             navtitle: Service management
+      - topicgroup:
+          label: Migration planning
+          topics:
+          - topic: migration-design.md
+            navtitle: Migration
   - navgroup:
       id: deploy
       topics:
