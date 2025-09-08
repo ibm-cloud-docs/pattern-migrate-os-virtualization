@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-05"
+lastupdated: "2025-09-08"
 
 keywords: virtualization, VMware, SDN, NSX, OpenShift
 
@@ -57,8 +57,6 @@ Following the [Architecture Design Framework](/docs/architecture-framework?topic
 -   Resiliency: Backup and Restore, High Availability
 -   Service Management: Monitoring, Logging, Alerting, Auditing/tracking, Event management and Management/Orchestration
 
-The Architecture Design Framework, described in [Introduction to the Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-intro), provides a consistent approach to design cloud solutions by addressing requirements across a pre-defined set of aspects and domains, which are technology-agnostic architectural areas that need to be considered for any enterprise solution. It can be used as a guide to make the necessary design and component choices to ensure that you have considered applicable requirements for each aspect and domain. After you have identified the applicable requirements and domains that are in scope, you can evaluate and select the best fit for purpose components for your enterprise cloud solution.
-
 ![A screen shot of a computer Description automatically generated](images/heat-map-MV-OCP-V.svg){: caption="Migrate VMware Workloads to IBM Cloud Red Hat OpenShift Virtualization design scope" caption-side="bottom"}
 
 ## Requirements
@@ -98,8 +96,7 @@ Update the following table below with components that are unique to this archite
 | Resiliency                                             | Live migration                                           | Physical servers with VM and Storage anti-affinity policy                                                                                                                     |
 | Service Management                                     | IBM Cloud Monitoring                                     | Apps and operational monitoring                                                                                                                                               |
 |                                                        | IBM Log Analysis                                         | Apps and operational logs                                                                                                                                                     |
-|                                                        | Activity Tracker Event Routing                           | Audit logs                                                                                                                                                                    |
-| Other use if there is additional aspect(s) Name Aspect | Cell content                                             | Cell content                                                                                                                                                                  |
+
 {: caption="Components" caption-side="bottom"}
 
 
