@@ -28,13 +28,10 @@ production: false
 
 # Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} OpenShift Virtualization
 
-{: \#architecture} {: toc-industry="FinancialSector, Manufacturing, Retail, Industrials, Communications"} {: toc-use-case="virtualization, hypervisor, migration, containers"} {: toc-version="1.0"}
 
-Lift and shift enterprise grade VMware workloads from on premises or hyperscaler based environments to IBM Cloud to take advantage of the unique benefits of a hybrid cloud strategy and best in class modernization capabilities through Red Hat OpenShift Virtualization. Integrated into the broader IBM Cloud, with several offerings bring to customers a known environment for their business applications while enabling access to new cloud technologies and innovations including IBM Watson for AI and platforms for new cloud native apps.
+Lift and shift enterprise grade VMware workloads from on premises or hyperscaler VMware based environments to IBM Cloud OpenShift Virtualization to take advantage of the unique benefits of a hybrid cloud strategy and best in class cloud native platform capabilities through Red Hat OpenShift Virtualization.
+Integrated into the broader IBM Cloud, with several offerings bring to customers a known environment for their business applications while enabling access to new cloud technologies and innovations including IBM Watson for AI and platforms for new cloud native apps.
 
-OpenShift Virtualization, uses Kernel-based Virtual Machine (KVM) the trusted Linux kernel hypervisor, delivering enterprise-grade virtualization, for virtual machines, as native objects within OpenShift. Virtual machines within OpenShift Virtualization benefit from sophisticated scheduling and management capabilities, including host affinity, resource awareness, load balancing, and built-in high availability.
-
-Networking capabilities include connection to the integrated cluster software-defined network (SDN), enabling secure and controlled access to virtual machines through configurable network policies. Red Hat OpenShift, with its integrated OpenShift Virtualization capabilities, offers a unified platform for running both containerized and traditional virtual machine workloads.
 
 ## Architecture diagram
 
