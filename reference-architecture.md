@@ -28,10 +28,7 @@ production: false
 
 # Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} OpenShift Virtualization
 
-
-Lift and shift enterprise grade VMware workloads from on premises or hyperscaler VMware based environments to IBM Cloud OpenShift Virtualization to take advantage of the unique benefits of a hybrid cloud strategy and best in class cloud native platform capabilities through Red Hat OpenShift Virtualization.
-Integrated into the broader IBM Cloud, with several offerings bring to customers a known environment for their business applications while enabling access to new cloud technologies and innovations including IBM Watson for AI and platforms for new cloud native apps.
-
+Lift and shift enterprise grade VMware workloads from on premises or hyperscaler VMware based environments to IBM Cloud OpenShift Virtualization to take advantage of the unique benefits of a hybrid cloud strategy and best in class cloud native platform capabilities through Red Hat OpenShift Virtualization. Integrated into the broader IBM Cloud, with several offerings bring to customers a known environment for their business applications while enabling access to new cloud technologies and innovations including IBM Watson for AI and platforms for new cloud native apps.
 
 ## Architecture diagram
 
@@ -82,15 +79,14 @@ Update the following table below with components that are unique to this archite
 | Aspects            | Architecture components                                  | How the component is used                                                                                                                                                     |
 |--------------------|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Compute            | OpenShift Virtualization                                 | Provides the infrastructure for virtual machines. Virtual machine lifecycle, non-disruptive VM migration and active resource balancing across the cluster of bare metal nodes |
+|                    | Migration Toolkit for virtualization                     | Provides virtual machine cold and warm migration.                                                                                                                             |
 | Storage            | IBM Cloud File Storage for VPC                           | File storage providing NFS-based file storage                                                                                                                                 |
 |                    | Object Storage                                           | Backups, Archiving, logs (application, operational, and audit logs)                                                                                                           |
 |                    | OpenShift Data Foundation                                | With CSI provider to host VM disks through Persistent Volume and Persistent Volume Claim                                                                                      |
 | Networking         | VPC Virtual Private Network (VPN)                        | Remote access to manage resources in private network                                                                                                                          |
 |                    | Virtual Private Gateway & Virtual Private Endpoint (VPE) | For private network access to Cloud Services, e.g., Key Protect, COS, etc.                                                                                                    |
-|                    | VPC Load Balancers                                       | Application Load Balancing for web servers, app servers, and database servers                                                                                                 |
-|                    | Public Gateway                                           | For web server access to the internet                                                                                                                                         |
+|                    | IBM Cloud DNS                                            | Provides Domain Name Resolution                                                                                                                                               |
 | Security           | IAM                                                      | IBM Cloud Identity & Access Management                                                                                                                                        |
-|                    | BYO Bastion Host on VPC VSI                              | Remote access with Privileged Access Management                                                                                                                               |
 |                    | Key protect                                              | Key Management Service                                                                                                                                                        |
 |                    | Secrets Manager                                          | Certificate and Secrets Management                                                                                                                                            |
 | Resiliency         | Live migration                                           | Physical servers with VM and Storage anti-affinity policy                                                                                                                     |
