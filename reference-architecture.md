@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-08"
+lastupdated: "2025-09-10"
 
 keywords: virtualization, VMware, SDN, NSX, OpenShift
 
@@ -27,10 +27,8 @@ production: false
 {{site.data.keyword.attribute-definition-list}}
 
 # Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} OpenShift Virtualization
-{: #architecture}
-{: toc-industry="FinancialSector, Manufacturing, Retail, Industrials, Communications"}
-{: toc-use-case="virtualization, hypervisor, migration, containers"}
-{: toc-version="1.0"}
+
+{: \#architecture} {: toc-industry="FinancialSector, Manufacturing, Retail, Industrials, Communications"} {: toc-use-case="virtualization, hypervisor, migration, containers"} {: toc-version="1.0"}
 
 Lift and shift enterprise grade VMware workloads from on premises or hyperscaler based environments to IBM Cloud to take advantage of the unique benefits of a hybrid cloud strategy and best in class modernization capabilities through Red Hat OpenShift Virtualization. Integrated into the broader IBM Cloud, with several offerings bring to customers a known environment for their business applications while enabling access to new cloud technologies and innovations including IBM Watson for AI and platforms for new cloud native apps.
 
@@ -39,62 +37,67 @@ OpenShift Virtualization, uses Kernel-based Virtual Machine (KVM) the trusted Li
 Networking capabilities include connection to the integrated cluster software-defined network (SDN), enabling secure and controlled access to virtual machines through configurable network policies. Red Hat OpenShift, with its integrated OpenShift Virtualization capabilities, offers a unified platform for running both containerized and traditional virtual machine workloads.
 
 ## Architecture diagram
-{: #architecture-diagram}
+
+{: \#architecture-diagram}
 
 The following diagram shows the high level reference architecture for this pattern:
 
 ![High level architecture diagram for the Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift Virtualization](/images/deployable-architecture-ocp-virtualization-cluster.svg){: caption="Migrate VMware Workloads to IBM Cloud Red Hat OpenShift Virtualization" caption-side="bottom"}
 
 ## Design scope
-{: #design-scope}
+
+{: \#design-scope}
 
 Following the [Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-taxonomy), Migrate VMware Workloads to IBM Cloud Red Hat OpenShift Virtualization covers design considerations and architecture decisions for the following aspects and domains:
 
--   Compute: Virtual servers, Virtualization
+-   Compute: Virtual servers, Virtualization and Migration
 -   Storage: Primary, Backup
--   Networking: Enterprise Connectivity, Cloud Native Connectivity, Load Balancing and Domain name system
+-   Networking: Enterprise Connectivity, Cloud Native Connectivity, and Domain name system
 -   Security: Data, Identity and Access Management,
 -   Resiliency: Backup and Restore, High Availability
--   Service Management: Monitoring, Logging, Alerting, Auditing/tracking, Event management and Management/Orchestration
+-   Service Management: Monitoring, Logging, Alerting, Auditing
 
 ![A screen shot of a computer Description automatically generated](images/heat-map-MV-OCP-V.svg){: caption="Migrate VMware Workloads to IBM Cloud Red Hat OpenShift Virtualization design scope" caption-side="bottom"}
 
 ## Requirements
-{: #requirements}
+
+{: \#requirements}
 
 Update the following table with requirements for this architecture. Introduce the table with a sentence. For example, "The following table outlines the requirements that are addressed in this architecture."
 
 | Aspect             | Requirements                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Compute            | Provide a single orchestration platform, for deploying, managing, scaling virtual machines and container instances. \\n Provide for VM migration of live virtual machines between hosting nodes. \\n Provide dynamic resource allocation and scheduling across worker pools. \\n Maintain current workload environments isolation and segmentation for compliance. \\n Maintain virtualized workload high availability service level agreement.                                                                                                                                                                                                                                                                 |
+| Compute            | Provide a single orchestration platform, for deploying, managing, scaling virtual machines and container instances. \\n Provide for VM migration of live virtual machines between hosting nodes. \\n Provide dynamic resource allocation and scheduling across worker pools. \\n Maintain current workload environments isolation and segmentation for compliance. \\n Maintain virtualized workload high availability service level agreement.                                                                                                                                                                                                                                                        |
 | Storage            | Provide storage that meets the application and database performance requirements. \\n Provide policy-based storage management.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Networking         | Maintain existing VMware network segregation and vLans \\n Provide DNS resolution across virtual and container instances \\n Provide that application network changes are not required (BYOIP).                                                                                                                                                                                                                                                                                                                                 |
+| Networking         | Maintain existing VMware network segregation and vLans \\n Provide DNS resolution across virtual and container instances \\n Provide that application network changes are not required (BYOIP).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Security           | Ensure all operator actions are executed securely through a bastion host. \\n Protect the boundaries of the application against denial-of-service and application-layer attacks. \\n Encrypt all application data in transit and at rest to protect from unauthorized disclosure. \\n Encrypt all backup data to protect from unauthorized disclosure. \\n Encrypt all security data (operational and audit logs) to protect from unauthorized disclosure. \\n Encrypt all data using customer managed keys to meet regulatory compliance requirements for additional security and customer control. \\n Protect secrets through their entire lifecycle and secure them using access control measures. |
 | Resiliency         | Provide highly available compute, storage, network, and other cloud services to handle application load and performance requirements. \\n Backup application data to enable recovery in the event of unplanned outages. \\n Provide highly available storage for security data (logs) and backup data.                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Service Management | Monitor system and application health metrics and logs to detect issues that might impact the availability of the application. \\n Generate alerts/notifications about issues that might impact the availability of applications to trigger appropriate responses to minimize down time. \\n Monitor audit logs to track changes and detect potential security problems. \\n Provide a mechanism to identify and send notifications about issues found in audit logs.                                                                                                                                                                                                                                  |
+
 {: caption="Requirements" caption-side="bottom"}
 
 ## Components
-{: #components}
+
+{: \#components}
 
 Update the following table below with components that are unique to this architecture. Introduce the table with a sentence. For example, "The following table outlines the products or services used in the architecture for each aspect."
 
-| Aspects                                                | Architecture components                                  | How the component is used                                                                                                                                                     |
-|--------------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Compute                                                | OpenShift Virtualization                         | Provides the infrastructure for virtual machines. Virtual machine lifecycle, non-disruptive VM migration and active resource balancing across the cluster of bare metal nodes |
-| Storage                                                | IBM Cloud File Storage for VPC                           | File storage providing NFS-based file storage                                                                                                                                 |
-|                                                        | Object Storage                                           | Backups, Archiving, logs (application, operational, and audit logs)                                                                                                           |
-|                                                        | OpenShift Data Foundation                                | With CSI provider to host VM disks through Persistent Volume and Persistent Volume Claim                                                                                      |
-| Networking                                             | VPC Virtual Private Network (VPN)                        | Remote access to manage resources in private network                                                                                                                          |
-|                                                        | Virtual Private Gateway & Virtual Private Endpoint (VPE) | For private network access to Cloud Services, e.g., Key Protect, COS, etc.                                                                                                    |
-|                                                        | VPC Load Balancers                                       | Application Load Balancing for web servers, app servers, and database servers                                                                                                 |
-|                                                        | Public Gateway                                           | For web server access to the internet                                                                                                                                         |
-| Security                                               | IAM                                                      | IBM Cloud Identity & Access Management                                                                                                                                        |
-|                                                        | BYO Bastion Host on VPC VSI                              | Remote access with Privileged Access Management                                                                                                                               |
-|                                                        | Key protect                                              | Key Management Service                                                                                                                                                        |
-|                                                        | Secrets Manager                                          | Certificate and Secrets Management                                                                                                                                            |
-| Resiliency                                             | Live migration                                           | Physical servers with VM and Storage anti-affinity policy                                                                                                                     |
-| Service Management                                     | IBM Cloud Monitoring                                     | Apps and operational monitoring                                                                                                                                               |
-|                                                        | IBM Log Analysis                                         | Apps and operational logs                                                                                                                                                     |
+| Aspects            | Architecture components                                  | How the component is used                                                                                                                                                     |
+|--------------------|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Compute            | OpenShift Virtualization                                 | Provides the infrastructure for virtual machines. Virtual machine lifecycle, non-disruptive VM migration and active resource balancing across the cluster of bare metal nodes |
+| Storage            | IBM Cloud File Storage for VPC                           | File storage providing NFS-based file storage                                                                                                                                 |
+|                    | Object Storage                                           | Backups, Archiving, logs (application, operational, and audit logs)                                                                                                           |
+|                    | OpenShift Data Foundation                                | With CSI provider to host VM disks through Persistent Volume and Persistent Volume Claim                                                                                      |
+| Networking         | VPC Virtual Private Network (VPN)                        | Remote access to manage resources in private network                                                                                                                          |
+|                    | Virtual Private Gateway & Virtual Private Endpoint (VPE) | For private network access to Cloud Services, e.g., Key Protect, COS, etc.                                                                                                    |
+|                    | VPC Load Balancers                                       | Application Load Balancing for web servers, app servers, and database servers                                                                                                 |
+|                    | Public Gateway                                           | For web server access to the internet                                                                                                                                         |
+| Security           | IAM                                                      | IBM Cloud Identity & Access Management                                                                                                                                        |
+|                    | BYO Bastion Host on VPC VSI                              | Remote access with Privileged Access Management                                                                                                                               |
+|                    | Key protect                                              | Key Management Service                                                                                                                                                        |
+|                    | Secrets Manager                                          | Certificate and Secrets Management                                                                                                                                            |
+| Resiliency         | Live migration                                           | Physical servers with VM and Storage anti-affinity policy                                                                                                                     |
+| Service Management | IBM Cloud Monitoring                                     | Apps and operational monitoring                                                                                                                                               |
+|                    | IBM Log Analysis                                         | Apps and operational logs                                                                                                                                                     |
 
 {: caption="Components" caption-side="bottom"}
