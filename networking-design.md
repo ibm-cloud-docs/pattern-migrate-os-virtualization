@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-10"
+lastupdated: "2025-09-11"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -14,35 +14,10 @@ keywords:
 # Network Design
 {: #network-design}
 
-## Key Networking Design Considerations for Migrating VMware Workloads to OpenShift Virtualization
-### 1. Network Segmentation and Traffic Separation
-- Use **VLANs** to isolate management, storage, and VM data traffic for enhanced security and performance.
-- Configure **dedicated network interfaces or bridges** for VM traffic to avoid interference with cluster operations.
-- Leverage **NodeNetworkConfigurationPolicy** with **OVS bridges** for granular control over VM networking.
 
----
 
-### 2. MTU Configuration and Link Aggregation
-- Ensure consistent **MTU settings** across all interfaces to prevent packet fragmentation.
-- Implement **Link Aggregation Control Protocol (LACP)** to boost bandwidth and provide redundancy.
-- Test MTU compatibility between OpenShift nodes and external systems before migration.
+-	**Maintain workload and management network segregation:** To preserve existing workload compliance boundaries and management segmentation, the Openshift Virtualization worker pools can be deployed into IBM Cloud VPCs that mirror existing segmentation. This approach allows for regulatory and operational controls - such that tenant isolation is maintained. Existing VMware cluster workload vLans can be mapped to VPC subnets. Additional VPC Subnets can be created for segregating management, storage and live migration network traffic.  Security groups and ACLs within the VPC can be used to implement network security compliance policies, ensuring access controls allign with the organisation standards.
 
----
+-	**Supportting Bring your own IP (BYOIP):** Where bring your own IP is rewquired for compliance, legacy integration, or static routing and to avoid related application changes, current IP ranges can be registered with IBM cloud and associated to the relevant VPC. Once configured, these IP addresses can be used for ingress controlers, load balancers, or directly assigned to virtual instances hosted on OpenShift Virtualization.
 
-### 3. VLAN Trunking and Overlay Networking
-- Use **VLAN trunking** to enable VMs to connect to multiple networks.
-- Choose between **overlay networking** (for isolated environments) and **localnet topology** (for direct access to physical networks) based on workload requirements.
-- Align OpenShift networking models with existing VMware configurations to ensure seamless integration.
-
----
-
-### 4. NIC and CNI Plugin Selection
-- Prefer **VirtIO NICs** for performance and compatibility with OpenShift Virtualization.
-- Use **OVN-Kubernetes CNI** for advanced networking features like policy enforcement and multi-network support.
-
----
-
-### 5. IP Address Management and DNS Integration
-- Plan for **IPAM** (IP Address Management) to avoid conflicts and ensure scalability.
-- Optionally use **DHCP** (standard network protocol used to automate the process of assigning IP addresses and other configuration details to devices within a network)
-- Integrate with existing **DNS infrastructure** to maintain name resolution consistency across platforms.
+-	**Load balncing and DNS integration across VMs and continer workloads** IBM Cloud VPC application Load Balancers (ALBs) can be used to distribute traffic across both virtual instances services and containerized applications, ensuring high availability and performance for mixed workloads. IBM Cloud DNS can be integrated with custom zones to support dynamic name resolution of migrated VM services, while OpenShift CoreDNS can be configured with forwarding rules to reuse existing DNS-records. This hybrid DNS strategy avoids duplication and supports service discovery across workload environments.
