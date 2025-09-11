@@ -36,7 +36,7 @@ Lift and shift enterprise grade VMware workloads from on premises or hyperscaler
 
 The following diagram shows the high level reference architecture for this pattern:
 
-![High level architecture diagram for the Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift Virtualization](/images/overall_architecture.svg.svg){: caption="Migrate VMware Workloads to IBM Cloud Red Hat OpenShift Virtualization" caption-side="bottom"}
+![High level architecture diagram for the Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift Virtualization](/images/overallarchitecture.svg){: caption="Migrate VMware Workloads to IBM Cloud Red Hat OpenShift Virtualization" caption-side="bottom"}
 
 ## Design scope
 
