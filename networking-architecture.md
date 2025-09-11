@@ -17,87 +17,11 @@ keywords:
 
 The following tables summarize the networking architecture decisions for migrating VMware workloads to IBM Cloud OpenShift Virtualization.
 
-| Architecture decision                                                      | Requirement                                                                                                             | Option                                                                             | Decision                               | Rationale                                                                                                                                                              |
-|----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enterprise or Cloud connectivity to source VMware datacentre for migration | Provide secure, encrypted connectivity to the enterprise or Cloud source VMware private network for migration purposes. | Direct Link \\n \\n Site to site VPN for VPC                                       | Direct Link                            | Delivers predictable bandwidth and low latency for bulk VM replication and warm production cutover \\n Supports hybrid and cloud source VMware Datacentre connectivity |
-| IBM Cloud network segmentation and isolation                               | Provide ability for network isolation across workloads                                                                  | OpenShift Clusters \\n \\n IBM Cloud VPC \\n \\n Subnets, ACLs and security groups | VPC, Subnets, ACLs and Security groups | Allows for segmentation, network isolation and network policies to implement compliance posture security controls                                                      |
-| Native connectivity to IBM Cloud services                                  | Provide secure connectivity to IBM Cloud Services                                                                       | Virtual Private Endpoints \\n \\n Public Cloud Service Endpoints                   | Virtual Private Endpoints              | Private Path service uses Virtual Private Endpoint gateways to provide connectivity                                                                                    |
+| Architecture decision                                                      | Requirement                                                                                                             | Option                                                                                                                                           | Decision                                                                                          | Rationale                                                                                                                                                              |
+|----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enterprise or Cloud connectivity to source VMware datacentre for migration | Provide secure, encrypted connectivity to the enterprise or Cloud source VMware private network for migration purposes. | Direct Link \\n \\n Site to site VPN for VPC                                                                                                     | Direct Link                                                                                       | Delivers predictable bandwidth and low latency for bulk VM replication and warm production cutover \\n Supports hybrid and cloud source VMware Datacentre connectivity |
+| IBM Cloud network segmentation and isolation                               | Provide ability for network isolation across workloads                                                                  | OpenShift Clusters \\n \\n IBM Cloud VPC \\n \\n Subnets, ACLs and security groups                                                               | VPC, Subnets, ACLs and Security groups                                                            | Allows for segmentation, network isolation and network policies to implement compliance posture security controls                                                      |
+| Native connectivity to IBM Cloud services                                  | Provide secure connectivity to IBM Cloud Services                                                                       | Virtual Private Endpoints \\n \\n Public Cloud Service Endpoints                                                                                 | Virtual Private Endpoints                                                                         | Private Path service uses Virtual Private Endpoint gateways to provide connectivity                                                                                    |
+| Provide that application network changes are not required (BYOIP)          | Provide capability for BYOIP                                                                                            | NAT mapping via Transit Gateway \\n \\n extend existing network using BGP over Direct link \\n \\n register prefixes via IBM Cloud BYOIP service | Register ip prefixes with IBM Cloud BYOIP service and assign into VPC public gateways or VPC ALBs | Preserves existing IP addresses. Eliminates NAT/translation complexity                                                                                                 |
 
 {: caption="Table 1. Architecture decisions for networking when migration VMware workloads to IBM Cloud OpenShift Virtualization" caption-side="bottom"}
-
-## Architecture decisions for BYOIP and Edge Gateways
-
-{: \#byoip-edge-gateways}
-
-The following are network BYOIP and edge gateay architecture decisions for this design.
-
-| Architecture decision | Requirement                                                                  | Option | Decision | Rationale |
-|-----------------------|------------------------------------------------------------------------------|--------|----------|-----------|
-| BYOIP approach        | Provide capability for bring your own IP (BYOIP) to IBM Cloud.               | text   | text     | text      |
-| Edge gateways         | Capability to provide edge routing services and possible tunnel termination. | text   | text     | text      |
-
-{: caption="Table 2. Architecture decisions for bring your own IP and edge gateways" caption-side="bottom"}
-
-## Architecture decisions for network segmentation and isolation
-
-{: \#network-segmentation-isolation}
-
-The following are network segmentation and isolation architecture decisions for this design.
-
-| Architecture decision              | Requirement                                            | Option | Decision | Rationale |
-|------------------------------------|--------------------------------------------------------|--------|----------|-----------|
-| Network segmentation and isolation | Ability to provide network isolation across workloads. | text   | text     | text      |
-
-{: caption="Table 3. Architecture decisions for network segmentation and isolation" caption-side="bottom"}
-
-## Architecture decisions for cloud native connectivity
-
-{: \#cloud-native-connectivity}
-
-The following are cloud native connectivity architecture decisions for this design.
-
-| Architecture decision                         | Requirement                                                                                                          | Option                                                                                                                        | Decision | Rationale |
-|-----------------------------------------------|----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------|-----------|
-| Cloud native connectivity (to cloud services) | Provide secure connection to Cloud Services                                                                          | \* VPC Gateway + Virtual Private Endpoints (VPE) \\n \* Private Cloud Service endpoints \\n \* Public Cloud Service Endpoints | text     | text      |
-| Multi-landing zone connectivity               | Connect two or more VPCs over a private network /n Connectectivity between classic, VPCs and/or Power Virutal Server | \* Global Transit Gateway \\n \* Local Transit Gateway (TGW)                                                                  | text     | text      |
-
-{: caption="Table 4. Architecture decisions for cloud native connectivity" caption-side="bottom"}
-
-## Architecture decisions for load balancing
-
-{: \#network-load-balancing}
-
-The following are load balancing architecture decisions for this design.
-
-| Architecture decision    | Requirement                                                                                                                | Option | Decision | Rationale |
-|--------------------------|----------------------------------------------------------------------------------------------------------------------------|--------|----------|-----------|
-| Global load balancing    | Load balancing over the public network across two regions in the event of an outage (DR) for failover to the other region. | text   | text     | text      |
-| Load balancing (public)  | Load balancing workloads across multiple workload instances or zones over the public network.                              | text   | text     | text      |
-| Load balancing (private) | Load balancing workloads across multiple workload instances or zones over the private network.                             | text   | text     | text      |
-
-{: caption="Table 5. Architecture decisions for load balancing" caption-side="bottom"}
-
-## Architecture decisions for content delivery network
-
-{: \#network-content delivery network}
-
-The following are content delivery network architecture decisions for this design.
-
-| Architecture decision    | Requirement                                                                          | Option | Decision | Rationale |
-|--------------------------|--------------------------------------------------------------------------------------|--------|----------|-----------|
-| Content delivery network | Provide ability to cache frequently accessed content at location nearest to the user | text   | text     | text      |
-
-{: caption="Table 6. Architecture decisions for content delivery network" caption-side="bottom"}
-
-## Architecture decisions for domain name system
-
-{: \#dns}
-
-The following are domain name system (DNS) architecture decisions for this design.
-
-| Architecture decision | Requirement                                                                                     | Option | Decision | Rationale |
-|-----------------------|-------------------------------------------------------------------------------------------------|--------|----------|-----------|
-| Public DNS            | Provide DNS resolution to support the use of hostnames instead of IP addresses for applications | text   | text     | text      |
-| Private DNS           | Provide DNS resolution within IBM Cloud's private network                                       | text   | text     | text      |
-
-{: caption="Table 7. Architecture decisions for domain name system" caption-side="bottom"}
