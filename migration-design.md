@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-04"
+lastupdated: "2025-09-17"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -17,9 +17,9 @@ keywords:
 ## Phased Migration Approach
 {: #phased-migration}
 
-The migration of VMware workloads to {{site.data.keyword.Bluemix_notm}} OpenShift Virtualization is proposed in a 4 phase migration program approach.
+The migration of VMware workloads to {{site.data.keyword.Bluemix_notm}} OpenShift Virtualization is proposed in a 6 phase program approach.
 
-![Migrate VMWare to Openshift Virtualization Phases](images/migvmwocpvibmcloud.svg){: caption="Migrate VMWare workloads to Openshift Virtualization Phased approach" caption-side="bottom"}
+![Migrate VMWare to Openshift Virtualization Phases](images/gmv1.svg){: caption="Migrate VMWare workloads to Openshift Virtualization phased approach" caption-side="bottom"}
 
 1.  Phase 1 Discovery and Assess
 
