@@ -35,6 +35,8 @@ toc:
             navtitle: Compute
           - topic: storage-design.md
             navtitle: Storage
+          - topic: service-management-design.md
+            navtitle: Service management
           - topic: security-design.md
             navtitle: Security
           - topic: networking-design.md
