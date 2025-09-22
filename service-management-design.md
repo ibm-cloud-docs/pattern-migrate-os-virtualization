@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-18"
+lastupdated: "2025-09-22"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -15,6 +15,37 @@ keywords:
 
 {: #service-management-design}
 
-A successful migration from VMware to IBM Cloud OpenShift Virtualization should consider the existing compliance boundaries, availability service level agreements, current workload density, and cpu oversubscription ratios.
+When migrating VMware workloads to IBM Cloud OpenShift Virtualization, traditional vCenter APIs and vRealize Operations (vROPS) are no longer available. Instead, you can us IBM Cloud Observability to deliver centralized monitoring, alerting, auditing and log aggregation across both the virtual and containerized workloads.
 
--	**Maintain observability:** To preserve existing compliance boundaries and workload segmentation, VMware production clusters can be mapped to IBM Cloud OpenShift Virtualization clusters. This approach allows for regulatory and operational controls - such as tenant isolation are maintained. Additionaly, existing VMware cluster vLans and vSphere folder structures can be mapped to OpenShift projects, namespaces and network policies to maintain auditability and compliance posture.
+## IBM Cloud Log
+
+{: #log-analysis}
+
+You can use IBM Cloud Log to add log management capabilities to Red Hat OpenShift VPC clusters and provide for the following:
+
+-   Customizable user interface for live streaming of log tailing, real-time troubleshooting issue alerts, and log archiving.
+-   Quick integration with the cluster via a script.
+-   Aggregated logs across clusters and cloud providers.
+-   Historical access to logs.
+-   Highly available, scalable, and compliant with industry security standards.
+-   Integrated with IBM Cloud IAM for user access management.
+
+## IBM Cloud Monitoring
+
+{: #ibm-cloud-monitoring}
+
+You can use IBM Cloud Monitoring to monitor the performance and overall system health of Red Hat OpenShift VPC clusters and provide for the following:
+
+-   Customizable user interface for a unified view of cluster metrics, container security, resource usage, alerts, and custom events.
+-   Quick integration with the cluster via a script.
+-   Aggregated metrics and container monitoring across clusters and cloud providers.
+-   Historical access to metrics that is based on the timeline and plan, and the ability to capture and download trace files.
+-   Highly available, scalable, and compliant with industry security standards.
+-   Integrated with IBM Cloud IAM for user access management.
+
+
+## Flow Logs for VPC clusters
+
+{: #flow-logs}
+
+Configure IBM Cloud Flow Logs for VPC to gather information about the traffic entering or leaving VPC cluster worker nodes. Flow logs are stored in an IBM Cloud Object Storage instance and can be used for troubleshooting purposes, adhering to compliance regulations.

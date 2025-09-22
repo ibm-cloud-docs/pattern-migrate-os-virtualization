@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-09-04"
+lastupdated: "2025-09-22"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -42,7 +42,7 @@ For storage solutions, IBM Cloud offers a comprehensive set of options optimized
 These managed add-ons enable enterprises to efficiently deploy and manage storage and infrastructure capabilities while leveraging the automation and resilience of OpenShift and IBM Cloud.
 
 **References:**
-[Enable or Disable the IBM managed Storage Add-Ons](https://cloud.ibm.com/docs/openshift?topic=openshift-storage-operator&interface=ui)
-[IBM Cloud Block Storage for VPC Cluster](https://cloud.ibm.com/docs/openshift?group=setting-up-block-storage-for-vpc)
-[IBM Cloud File Storage for VPC Cluster](https://cloud.ibm.com/docs/openshift?group=setting-up-file-storage-for-vpc)
-[OpenShift Data Foundation for VPC Cluster](https://cloud.ibm.com/docs/openshift?group=setting-up-openshift-data-foundation)
+<br>[Enable or Disable the IBM managed Storage Add-Ons](https://cloud.ibm.com/docs/openshift?topic=openshift-storage-operator&interface=ui)
+<br>[IBM Cloud Block Storage for VPC Cluster](https://cloud.ibm.com/docs/openshift?group=setting-up-block-storage-for-vpc)
+<br>[IBM Cloud File Storage for VPC Cluster](https://cloud.ibm.com/docs/openshift?group=setting-up-file-storage-for-vpc)<br>
+[OpenShift Data Foundation for VPC Cluster](https://cloud.ibm.com/docs/openshift?group=setting-up-openshift-data-foundation)</br>
