@@ -35,10 +35,10 @@ The following are security architecture decisions for the pattern name.
 
 | Architecture decision | Requirement |  Option | Decision | Rationale |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
-| Key lifecycle management and HSM | Encrypt data at rest and in transit by using customer-managed keys to protect them from unauthorized access.  | Key Protect \n Hyper Protect Crypto Services (HPCS) | Key Protect | Key Protect is recommended for applications that need to comply with regulations requiring encryption of data with customer-managed keys. Key Protect provides key management services by using a shared (multi-tenant) FIPS 140-2 Level 3 certified hardware security modules (HSMs). |
+| Key lifecycle management and HSM | Encrypt data at rest and in transit by using customer-managed keys to protect them from unauthorized access.  | - Key Protect \n - Hyper Protect Crypto Services (HPCS) | Key Protect | Key Protect is recommended for applications that need to comply with regulations requiring encryption of data with customer-managed keys. Key Protect provides key management services by using a shared (multi-tenant) FIPS 140-2 Level 3 certified hardware security modules (HSMs). |
 | | | | Hyper Protect Crypto Services (HPCS) | HPCS is recommended for financial services and highly regulated industry applications. HPCS provides Key Management Services with the highest level of security and control that is offered by any cloud provider in the industry. It uses a dedicated (single-tenant) FIPS 140-2 Level 4 certified Hardware Security Module and supports customer-managed master keys, giving the customer exclusive control of the entire key hierarchy. |
 | Certificate management | Protect secrets through their entire lifecycle and secure them using access control measures | Secrets Manager \n BYO Certificate Manager | Secrets Manager | IBM Secrets Manager creates, leases, and centrally manages secrets that are used by IBM Cloud Services or customer applications. Secrets are stored in a dedicated instance of Secrets Manager and can be encrypted by using any of IBM Cloud Key Management Services. |
-{: caption="Table 2. Key management architecture decisions" caption-side="bottom"}
+{: caption="Key management architecture decisions" caption-side="bottom"}
 
 ## Architecture decisions for identity and access management
 {: #iam}
@@ -47,7 +47,7 @@ The following are security architecture decisions for the pattern name.
 | -------------- | -------------- | -------------- | -------------- | -------------- |
 | Privileged access management        | - Ensure that all operator actions are run securely through a bastion host \n - Implement session recording to track all activities and note any potential threats \n - Manage access to resources and track commands issued | - BYO Bastion Host \n - BYO Bastion Host with Privileged Access Management (PAM) SW                  | BYO Bastion Host with Privileged Access Management (PAM) SW  | The Bastion Host is a Virtual Server instance that is provisioned through SSH over a private network to securely access resources within IBM Cloud’s private network. Using PAM software is recommended to perform session recording and to help track and manage all access.                      |
 | Identity access & role management (IDM) | Securely authenticate users for platform services and control access to resources consistently across IBM Cloud| IBM Cloud IAM| IBM Cloud IAM| Use IAM access policies to assign users, service IDs, and trusted profiles access to resources within the IBM Cloud account.|
-{: caption="Table 3. Identity and access management architecture decisions" caption-side="bottom"}
+{: caption="Identity and access management architecture decisions" caption-side="bottom"}
 
 ## Architecture decisions for application security
 {: #app-security}
@@ -55,8 +55,9 @@ The following are security architecture decisions for the pattern name.
 | Architecture decision | Requirement |  Option | Decision | Rationale |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
 | DDoS | - Enforce information flow policies and protect the boundaries of the application. \n - Protect against or limit the effects of denial-of-service attacks. | IBM Cloud Internet Services (CIS) | IBM Cloud Internet Services (CIS) | IBM Cloud Internet Services provide Distributed Denial of Service (DDoS) to protect applications that are exposed to the public network. |
+| SSL/TLS | - Enforce information flow policies and protect the boundaries of the application. \n - Protect against or limit the effects of denial-of-service attacks. | IBM Cloud Internet Services (CIS) | IBM Cloud Internet Services (CIS) | IBM Cloud Internet Services provide SSL/TLS (Secure Sockets Layer / Transport Layer Security) to protect applications that are exposed to the public network. |
 | Web application firewall | Protect web applications from application layer attacks. | - IBM Cloud Internet Services (CIS) \n - BYO Firewall on Virtual Server for VPC | IBM Cloud Internet Services (CIS) | IBM Cloud Internet Services provides Web Application Firewall security features to protect applications that are exposed to the public network. |
-{: caption="Table 4. Application security architecture decisions" caption-side="bottom"}
+{: caption="Application security architecture decisions" caption-side="bottom"}
 
 ## Architecture decisions for infrastructure and endpoint
 {: #infrastructure and endpoint}
@@ -65,20 +66,20 @@ The following are security architecture decisions for the pattern name.
 | -------------- | -------------- | -------------- | -------------- | -------------- |
 | Core network protection                 | -   Strict separation of duties \n-   Isolated security zones between environments \n-   Isolated, private cloud environment| text | text | text |
 | Edge and endpoint protection                 | text| text | text | text |
-{: caption="Table 5. Infrastructure and endpoint architecture decisions" caption-side="bottom"}
+{: caption="Infrastructure and endpoint architecture decisions" caption-side="bottom"}
 
 ## Architecture decisions for threat detection and response
 {: #threat detection and response}
 
 | Architecture decision | Requirement |  Option | Decision | Rationale |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
-|Threat detection and response|- Boundary protection: highest level of isolation from external network threats \n - IPS/IDS protection at all ingress/egress \n - Unified Threat Management (UTM) Firewall|BYO Virtual Firewall (on VSI) in Edge VPC (deployed across availability zones) client choices: \n [Fortigate](https://cloud.ibm.com/catalog/content/ibm-fortigate-AP-HA-terraform-deploy-5dd3e4ba-c94b-43ab-b416-c1c313479cec-global)  \n  [Juniper vSRX](https://cloud.ibm.com/catalog/content/juniper-vsrx-catalog-deploy-1.4-dc1e707c-33dd-4321-b2a5-c22dbf0dd0ee-global) \n [Palo Alto](https://cloud.ibm.com/catalog/content/ibmcloud-vmseries-1.9-6470816d-562d-4627-86a5-fe3ad4e94b30-global)| text |Can be provided by Enterprise Network DMZ \n In addition, if client requires: \n - Virtual FW on VSI in the Transit/Edge VPC \n - Client preference however recommendation is Fortigate or Juniper \n - Fortigate supports native HA configuration \n - Fortigate and Juniper both support both IPS & IDS|
-{: caption="Table 6. Threat detection and response architecture decisions" caption-side="bottom"}
+|Threat detection and response|- Boundary protection: highest level of isolation from external network threats \n - IPS/IDS protection at all ingress/egress \n - Unified Threat Management (UTM) Firewall|BYO Virtual Firewall (on VSI) in Edge VPC (deployed across availability zones) client choices: \n [Fortigate](https://cloud.ibm.com/catalog/content/ibm-fortigate-AP-HA-terraform-deploy-5dd3e4ba-c94b-43ab-b416-c1c313479cec-global)  \n  [Juniper vSRX](https://cloud.ibm.com/catalog/content/juniper-vsrx-catalog-deploy-1.4-dc1e707c-33dd-4321-b2a5-c22dbf0dd0ee-global) \n [Palo Alto](https://cloud.ibm.com/catalog/content/ibmcloud-vmseries-1.9-6470816d-562d-4627-86a5-fe3ad4e94b30-global)| Firewall choice should align with in-house expertise, balancing control and simplicity |Can be provided by Enterprise Network DMZ \n In addition, if client requires: \n - Virtual FW on VSI in the Transit/Edge VPC \n - Client preference however recommendation is Fortigate or Juniper \n - Fortigate supports native HA configuration \n - Fortigate and Juniper both support both IPS & IDS|
+{: caption="Threat detection and response architecture decisions" caption-side="bottom"}
 
 ## Architecture decisions for governance, risk and compliance
 {: #governance, risk and compliance}
 
 | Architecture decision | Requirement |  Option | Decision | Rationale |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
-|Governance, risk and compliance| text | text | text | text|
-{: caption="Table 7. Govenrnace, risk and compliance architecture decisions" caption-side="bottom"}
+|Governance, risk and compliance| - Continuous compliance monitoring \n - Risk assessment and scoring \n - Policy enforcement \n - Threat detection and response \n - Vulnerability management \n - Cloud security posture management (CSPM) \n - Automated reporting for audits \n - Unified Security and compliance across hybrid cloud  | - IBM Cloud Security and Compliance Center (SCC) Workload Protection | IBM Cloud Security and Compliance Center (SCC) Workload Protection | IBM Cloud Security and Compliance Center (SCC) provides centralized workload protection for OpenShift Virtualization and container environments by continuously monitoring VMs and containerized workloads for vulnerabilities, misconfigurations, and security risks. It integrates governance, risk, and compliance (GRC) capabilities by enforcing security policies, assessing risk exposure, and automating compliance reporting for standards like CIS Benchmarks, NIST, PCI DSS, and GDPR. SCC enables organizations to maintain audit-ready environments, ensure regulatory adherence, and integrate security into DevSecOps pipelines, providing end-to-end visibility and protection across hybrid and cloud-native workloads.|
+{: caption="Govenrnace, risk and compliance architecture decisions" caption-side="bottom"}
