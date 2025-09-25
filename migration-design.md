@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-17"
+lastupdated: "2025-09-25"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -40,3 +40,23 @@ Document day 2 operation requirements including, automation, configuration manag
 Document security and compliance requirements.
 
 Document licensing requirements.
+
+**Design and Pilot**
+
+Data is collected across platform, operations and application teams to understand the as-is VMware operating processes, automation and IT integration with the workload applications.
+
+**Build and Code**
+
+Data is collected across platform, operations and application teams to understand the as-is VMware operating processes, automation and IT integration with the workload applications.
+
+**Migrate and Manage**
+
+Data is collected across platform, operations and application teams to understand the as-is VMware operating processes, automation and IT integration with the workload applications.
+
+**Scale and Decommision**
+
+Data is collected across platform, operations and application teams to understand the as-is VMware operating processes, automation and IT integration with the workload applications.
+
+**Production Cutover and Decommision**
+
+Data is collected across platform, operations and application teams to understand the as-is VMware operating processes, automation and IT integration with the workload applications.
