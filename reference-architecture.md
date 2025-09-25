@@ -27,6 +27,7 @@ production: false
 {{site.data.keyword.attribute-definition-list}}
 
 # Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} OpenShift Virtualization
+{: #openshift-virt-arch}
 
 Migrate enterprise production grade VMware workloads from on premises or hyperscaler VMware based environments to IBM Cloud OpenShift Virtualization to take advantage of the unique benefits of a hybrid cloud strategy and best in class cloud native platform capabilities through Red Hat OpenShift Virtualization. Integrated into the broader IBM Cloud, with several offerings bring to customers a known environment for their business applications while enabling access to new cloud technologies and innovations including IBM Watson for AI and platforms for new cloud native apps.
 
