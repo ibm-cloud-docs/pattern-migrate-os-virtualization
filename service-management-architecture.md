@@ -10,8 +10,7 @@ keywords:
 ---
 
 # Architecture decisions for service management
-
-{: \#service}
+{: #service}
 
 The following sections summarize the architecture decisions for service management, when migrating VMware workloads to IBM Cloud OpenShift Virtualization clusters using a virtualization platform modernization strategy and adopting DevSecOps work practices.
 
@@ -23,5 +22,4 @@ The following sections summarize the architecture decisions for service manageme
 | Event notification    |                                                                                                                                                                                     | IBM Cloud Event notification \\n OpenShift alert manager        | IBM Cloud Event Notifications | Acts as the orchestration layer for compliance alerts, audit events and incident reporting. Enables routing to external SIEM systems (PagerDuty, Service Now, other) with policy-based filtering and escalation.  |
 |                       |                                                                                                                                                                                     |                                                                 |                               |                                                                                                                                                                                                                   |
 |                       |                                                                                                                                                                                     |                                                                 |                               |                                                                                                                                                                                                                   |
-
 {: caption="Table 1. Architecture decisions for service management" caption-side="bottom"}
