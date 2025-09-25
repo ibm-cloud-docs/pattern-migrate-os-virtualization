@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-24"
+lastupdated: "2025-09-25"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -27,13 +27,12 @@ A migration program using virtualization platform modernization approach require
 
 **IBM Cloud Monitoring**
 
-You can use IBM Cloud Log to add log management capabilities to Red Hat OpenShift VPC clusters and provide for the following:
+You can use IBM Cloud Monitoring to monitor the performance and overall system health of Red Hat OpenShift Virtualization clusters, worker pools and worker nodes providing for the following:
 
--   Customizable user interface for live streaming of log tailing, real-time troubleshooting issue alerts, and log archiving.
--   Aggregated logs across clusters and cloud providers.
+-   Customizable user interface for a unified view of cluster metrics, virtual machine and container security, resource usage, alerts, and custom events.
+-   Aggregated metrics and monitoring across OpenShift Virtualization clusters.
 -   Highly available, scalable, and compliant with industry security standards.
-
-Integrated with IBM Cloud IAM for user access management.
+-   Integrated with IBM Cloud IAM for user access management.
 
 **IBM Cloud Log**
 
@@ -43,6 +42,9 @@ You can use IBM Cloud Log to add log management capabilities to Red Hat OpenShif
 -   Aggregated logs across clusters.
 -   Highly available, scalable, and compliant with industry security standards.
 -   Integrated with IBM Cloud IAM for user access management.
+-   **IBM Cloud Flow Logs for VPC**
+
+You can configure IBM Cloud Flow Logs for VPC to gather information about the traffic entering or leaving the OpenShift Virtualization cluster worker nodes. Flow logs are stored in an IBM Cloud Object Storage instance and can be used for troubleshooting purposes, adhering to compliance regulations
 
 ## OpenShift Declarative Pipelines
 
