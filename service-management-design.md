@@ -19,7 +19,7 @@ When migrating production critical VMware workloads to IBM Cloud OpenShift Virtu
 
 A short-term migration program using lift and shift approach to minimize changes will focus on replacing dependant VMware tooling, such as vCenter APIs, vROps, with IBM Cloud Observability and OpenShift Virtualization APIs to manage VM lifecycle and placement.
 
-A migration program using virtualization platform modernization approach requires a re-coding from ITIL process tooling and imperative scripting to a DevSecOps declarative model built on GitOps workflows and policy-driven automation. Legacy runbooks and ticket based operations are replaced by declarative pipelines ,version-controlled manifests and integrated security gates to align the virtualization platform with cloud-native delivery practices.
+A migration program using virtualization platform modernization approach requires a re-coding from ITIL process tooling and imperative scripting to a DevSecOps declarative model built on GitOps workflows and policy-driven automation. Legacy runbooks and ticket based operations are replaced by declarative pipelines ,version-controlled manifests and integrated security gates to align the virtualization platform with cloud-native DevSecOps practices.
 
 ## IBM Cloud Observability
 

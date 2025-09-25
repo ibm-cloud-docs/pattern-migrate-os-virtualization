@@ -25,38 +25,40 @@ The migration of VMware workloads to {{site.data.keyword.Bluemix_notm}} OpenShif
 
 **Discovery and Insights**
 
-Data is collected across platform, operations and application teams to understand the as-is VMware operating processes, automation and IT integration with the workload applications.
+Data is collected across the distributed landscape, VMware Clusters, operations and service management processes. IBM AI powered discovery and assessment tooling (such as CAST, IC4CT) can automate application to infrastructure resource mapping and affiinity, and right-size the target landing zones.
 
-Extract and document VMware platform inventory and ressource allocation, typically using RVTools.
+The extract of the VMware platform inventory and compute resource allocation typically uses RVTools.
 
-Identify priorities such as slow responses to business needs, complexity of accelerating application modernization programs.
+IBM Turbonomics and Apptio AI-driven tooling can provide insights to right size target landing zones and propose TCO optimization on the OpenShift Virtualization platform.
 
-Identify and document current infrastructure, applications, relationships, and dependencies including drift from the expected business required state.
-
-Identify use case for proof of concept (POC).
-
-Document day 2 operation requirements including, automation, configuration management, observability, disaster recovery.
-
-Document security and compliance requirements.
-
-Document licensing requirements.
+Identify use case and run proof of concept (POC).
 
 **Design and Pilot**
 
-Data is collected across platform, operations and application teams to understand the as-is VMware operating processes, automation and IT integration with the workload applications.
+Design workshop with key infrastructure, operations, workload stakeholders.
+
+Target platform design with performance, scalability, availability, security, regulatory and compliance considerations.
+
+Disaster recovery planning based on RTO / RPO requirements.
+
+Migration strategy and program planning with low-risk migration and warm production cutover.
+
+Design, build and execute Pilot.
 
 **Build and Code**
 
-Data is collected across platform, operations and application teams to understand the as-is VMware operating processes, automation and IT integration with the workload applications.
+Build target IBM Cloud OpenShift Virtualization environment (compute, network, storage).
+
+Connectivity linkage between VMware and target OpenShift Virtualization clusters.
+
+Code pre-migration and post migration playbooks.
+
+Code day 2 service management playbooks and declarative .
 
 **Migrate and Manage**
 
-Data is collected across platform, operations and application teams to understand the as-is VMware operating processes, automation and IT integration with the workload applications.
+Initial wave migrations.
 
-**Scale and Decommision**
+**Scale and Decommission**
 
-Data is collected across platform, operations and application teams to understand the as-is VMware operating processes, automation and IT integration with the workload applications.
-
-**Production Cutover and Decommision**
-
-Data is collected across platform, operations and application teams to understand the as-is VMware operating processes, automation and IT integration with the workload applications.
+**Production Cutover and Decommission**
