@@ -12,15 +12,15 @@
       },
       {
         "title": "Reference Architecture",
-        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-migrate-vmware-workloads-to-ibm-cloud-openshift-virtualization"
+        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-ref-arch"
       },
       {
         "title": "Planning",
-        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-virtual-infrastructure-migration-planning"
+        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-compute-design"
       },
       {
         "title": "Deploying",
-        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-deploying-the-openshift-virtualization-operator"
+        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-unique-id"
       },
       {
         "title": "References",
