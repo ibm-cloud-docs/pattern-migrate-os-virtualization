@@ -57,8 +57,16 @@ Code day 2 service management playbooks and declarative .
 
 **Migrate and Manage**
 
-Initial wave migrations.
+Initial wave migrations for testing and development enviornments.
+Validate performance, placement policies and operational model.
 
 **Scale and Decommission**
 
+Complex wave migrations, including UAT environments validating orchestration, integrations under production-like conditions.
+Decommision VMware unused infrstructure, ensure secure data disposition, audit traceability and compliance with retention policies.
+
 **Production Cutover and Decommission**
+
+Ensure production cutover readiness including business continuity and rollback processes.
+Perform final cutover during agreed maintenance windows using warm migrate method.
+Retire residual VMWare assets.
