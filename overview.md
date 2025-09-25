@@ -12,8 +12,7 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Overview
-
-{: \#overview}
+{: #overview}
 
 The objective of this pattern is to provide an {{site.data.keyword.IBM_notm}} solution design and deployment guide for the usage of OpenShift Virtualization to migrate existing VMware virtual machine workloads into IBM Cloud OpenShift Virtualization.
 

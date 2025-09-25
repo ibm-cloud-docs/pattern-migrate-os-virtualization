@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-24"
+lastupdated: "2025-09-25"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -12,8 +12,7 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Compute design
-
-{: \#compute-design}
+{: #compute-design}
 
 A successful migration from VMware to IBM Cloud OpenShift Virtualization should consider the existing workload compliance requirements, platform availability service level agreements, current workload density and compute resource oversubscription ratios.
 

@@ -27,20 +27,19 @@ production: false
 {{site.data.keyword.attribute-definition-list}}
 
 # Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} OpenShift Virtualization
+{: #ref-arch}
 
 Migrate enterprise production grade VMware workloads from on premises or hyperscaler VMware based environments to IBM Cloud OpenShift Virtualization to take advantage of the unique benefits of a hybrid cloud strategy and best in class cloud native platform capabilities through Red Hat OpenShift Virtualization. Integrated into the broader IBM Cloud, with several offerings bring to customers a known environment for their business applications while enabling access to new cloud technologies and innovations including IBM Watson for AI and platforms for new cloud native apps.
 
 ## Architecture diagram
-
-{: \#architecture-diagram}
+{: #architecture-diagram}
 
 The following diagram shows the high level reference architecture for this pattern:
 
 ![High level architecture diagram for the Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift Virtualization](/images/overallarchitecture.svg){: caption="Migrate VMware Workloads to IBM Cloud Red Hat OpenShift Virtualization" caption-side="bottom"}
 
 ## Design scope
-
-{: \#design-scope}
+{: #design-scope}
 
 Following the [Architecture Design Framework](/docs/architecture-framework?topic=architecture-framework-taxonomy), Migrate VMware Workloads to IBM Cloud Red Hat OpenShift Virtualization covers design considerations and architecture decisions for the following aspects and domains:
 
@@ -54,8 +53,7 @@ Following the [Architecture Design Framework](/docs/architecture-framework?topic
 ![A screen shot of a computer Description automatically generated](images/heat-map-MV-OCP-V.svg){: caption="Migrate VMware Workloads to IBM Cloud Red Hat OpenShift Virtualization design scope" caption-side="bottom"}
 
 ## Requirements
-
-{: \#requirements}
+{: #requirements}
 
 Update the following table with requirements for this architecture. Introduce the table with a sentence. For example, "The following table outlines the requirements that are addressed in this architecture."
 
@@ -67,12 +65,10 @@ Update the following table with requirements for this architecture. Introduce th
 | Security           | Ensure all operator actions are executed securely through a bastion host. \\n Protect the boundaries of the application against denial-of-service and application-layer attacks. \\n Encrypt all application data in transit and at rest to protect from unauthorized disclosure. \\n Encrypt all backup data to protect from unauthorized disclosure. \\n Encrypt all security data (operational and audit logs) to protect from unauthorized disclosure. \\n Encrypt all data using customer managed keys to meet regulatory compliance requirements for additional security and customer control. \\n Protect secrets through their entire lifecycle and secure them using access control measures. |
 | Resiliency         | Provide highly available compute, storage, network, and other cloud services to handle application load and performance requirements. \\n Backup application data to enable recovery in the event of unplanned outages. \\n Provide highly available storage for security data (logs) and backup data.                                                                                                                                                                                                                                                                                                                                                                                                 |
 | Service Management | Monitor systems health metrics and logs to detect issues that might impact the availability of the workload. \\n Generate alerts and notifications about issues that might impact the availability of workload to trigger appropriate responses to minimize down time. \\n Monitor audit logs to track changes and detect potential security problems. \\n Provide a mechanism to identify and send notifications about issues found in audit logs.                                                                                                                                                                                                                                                    |
-
 {: caption="Requirements" caption-side="bottom"}
 
 ## Components
-
-{: \#components}
+{: #components}
 
 Update the following table below with components that are unique to this architecture. Introduce the table with a sentence. For example, "The following table outlines the products or services used in the architecture for each aspect."
 
@@ -100,5 +96,4 @@ Update the following table below with components that are unique to this archite
 |                    | IBM Cloud Flow Logs for VPC                                        | IBM Cloud Flow Logs for VPC provides the collection, storage, and presentation of information about the Internet Protocol (IP) traffic going to and from network interfaces on the OpenShift Worker Nodes within the Virtual Private Cloud (VPC) |
 |                    | OpenShift GitOps                                                   | Provides for declarative implementation of virtual machine and operating system desired state.                                                                                                                                                   |
 |                    | OpenShift Pipelines                                                | Provides for execution of the CI/CD workflows for virtual machine and operating system lifecycle within a DevSecOps delivery model.                                                                                                              |
-
 {: caption="Components" caption-side="bottom"}

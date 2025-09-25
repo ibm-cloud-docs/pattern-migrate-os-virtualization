@@ -12,8 +12,7 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Service management design
-
-{: \#service-management-design}
+{: #service-management-design}
 
 When migrating production critical VMware workloads to IBM Cloud OpenShift Virtualization, required service management process and tooling changes will be driven by the migration program schedule and strategy.
 
@@ -22,10 +21,10 @@ A short-term migration program using lift and shift approach to minimize changes
 A migration program using virtualization platform modernization approach requires a re-coding from ITIL process tooling and imperative scripting to a DevSecOps declarative model built on GitOps workflows and policy-driven automation. Legacy runbooks and ticket based operations are replaced by declarative pipelines ,version-controlled manifests and integrated security gates to align the virtualization platform with cloud-native DevSecOps practices.
 
 ## IBM Cloud Observability
-
-{: \#Observability}
+{: #Observability}
 
 **IBM Cloud Monitoring**
+{: #monitoring}
 
 You can use IBM Cloud Monitoring to monitor the performance and overall system health of Red Hat OpenShift Virtualization clusters, worker pools and worker nodes providing for the following:
 
@@ -35,6 +34,7 @@ You can use IBM Cloud Monitoring to monitor the performance and overall system h
 -   Integrated with IBM Cloud IAM for user access management.
 
 **IBM Cloud Log**
+{: #logging}
 
 You can use IBM Cloud Log to add log management capabilities to Red Hat OpenShift VPC clusters and provide for the following:
 
@@ -47,17 +47,18 @@ You can use IBM Cloud Log to add log management capabilities to Red Hat OpenShif
 You can configure IBM Cloud Flow Logs for VPC to gather information about the traffic entering or leaving the OpenShift Virtualization cluster worker nodes. Flow logs are stored in an IBM Cloud Object Storage instance and can be used for troubleshooting purposes, adhering to compliance regulations
 
 ## OpenShift Declarative Pipelines
-
-{: \#OpenShift-declarative-pipelines}
+{: #OpenShift-declarative-pipelines}
 
 You can use IBM Cloud OpenShift Virtualization, declarative pipelines to enable GitOps automation, VM lifecycle orchestration, and policy driven governance using the following:
 
 **Openshift GitOps (Argo CD)**
+{: #argocd}
 
 -   Can manage the desired state of virtual machine and infrastructure as code.
 -   Enables automated reconciliation of virtual machine configuration from Git repository.
 
 **Openshift Pipelines**
+{: #os-pipelines}
 
 -   Allows execution of CI/CD workflows for virtual machine provisioning, configuration, and testing.
 -   Integrates with secrets, config maps, and custom tasks for virtual machine deployment automation.
