@@ -12,11 +12,9 @@ keywords:
 {{site.data.keyword.attribute-definition-list}}
 
 # Migrate VMWare workloads to IBM Cloud OpenShift Planning
-
 {: \#migration-design}
 
 ## Phased Migration Approach
-
 {: \#phased-migration}
 
 The migration of VMware workloads to {{site.data.keyword.Bluemix_notm}} OpenShift Virtualization is proposed in a 6 phase program approach.
