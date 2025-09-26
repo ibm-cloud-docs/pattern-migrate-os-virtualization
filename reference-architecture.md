@@ -7,15 +7,7 @@ keywords: virtualization, VMware, SDN, NSX, OpenShift
 
 subcollection: pattern-migrate-os-virtualization
 
-
-version: 1.0
-
-deployment-url: url
-
-use-case: virtualization, hypervisor, migration, containers
-industry: FinancialSector, Manufacturing, Retail, Industrials, Communications
-compliance:
-content-type: deployment
+Keywords:
 
 ---
 
