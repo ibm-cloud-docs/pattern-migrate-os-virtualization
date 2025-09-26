@@ -1,15 +1,12 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-25"
+lastupdated: "2025-09-26"
 
 keywords: virtualization, VMware, SDN, NSX, OpenShift
 
 subcollection: pattern-migrate-os-virtualization
 
-authors:
-  - name: Esteban Arias
-    url: https://linkedin.com/in/eariasn01
 
 version: 1.0
 
@@ -19,8 +16,6 @@ use-case: virtualization, hypervisor, migration, containers
 industry: FinancialSector, Manufacturing, Retail, Industrials, Communications
 compliance:
 content-type: deployment
-
-production: false
 
 ---
 
