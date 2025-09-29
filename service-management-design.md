@@ -23,7 +23,7 @@ A migration program using virtualization platform modernization approach require
 ## IBM Cloud Observability
 {: #Observability}
 
-**IBM Cloud Monitoring**
+### IBM Cloud Monitoring
 {: #monitoring}
 
 You can use IBM Cloud Monitoring to monitor the performance and overall system health of Red Hat OpenShift Virtualization clusters, worker pools and worker nodes providing for the following:
@@ -33,7 +33,7 @@ You can use IBM Cloud Monitoring to monitor the performance and overall system h
 -   Highly available, scalable, and compliant with industry security standards.
 -   Integrated with IBM Cloud IAM for user access management.
 
-**IBM Cloud Log**
+### IBM Cloud Logs
 {: #logging}
 
 You can use {{site.data.keyword.logs_full_notm}} to add log management capabilities to Red Hat OpenShift VPC clusters and provide for the following:
@@ -42,7 +42,9 @@ You can use {{site.data.keyword.logs_full_notm}} to add log management capabilit
 -   Aggregated logs across clusters.
 -   Highly available, scalable, and compliant with industry security standards.
 -   Integrated with IBM Cloud IAM for user access management.
--   **IBM Cloud Flow Logs for VPC**
+
+### {{site.data.keyword.fl_full}}
+{: #flow-logs}
 
 You can configure {{site.data.keyword.fl_full}} to gather information about the traffic entering or leaving the OpenShift Virtualization cluster worker nodes. Flow logs are stored in an {{site.data.keyword.cos_full_notm}} instance and can be used for troubleshooting purposes, adhering to compliance regulations
 
