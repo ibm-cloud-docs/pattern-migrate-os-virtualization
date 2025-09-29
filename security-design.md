@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-08-29"
+lastupdated: "2025-09-29"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -24,6 +24,6 @@ API endpoints are securely exposed through IBM Cloud Internet Services (CIS), wh
 For workloads and virtual machines on Red Hat OpenShift Virtualization, enforce namespace isolation, apply resource quotas, and configure network policies to prevent unauthorized access and limit lateral movement. All VM and container images should be scanned for vulnerabilities before deployment, with admission controllers used to enforce compliance and block unverified images. Live migrations must be encrypted and restricted to private networks to 
 protect data in transit. Sensitive assets such as credentials, certificates, and encryption keys should be stored in Kubernetes Secrets or managed through IBM Secrets manager or IBM Key Protect or Hyper Protect Crypto Services (HPCS), with access governed by role-based access controls (RBAC) to ensure least-privilege access.  
 
-Protect data by enabling encryption for all persistent storage, configuring secure backups, and leveraging snapshots through CSI-integrated storage add-ons. For File Storage on VPC, enforce NFS access with enterprise-grade access controls to ensure secure data sharing across workloads. Use advanced storage capabilities from OpenShift Data Foundation (ODF) or IBM Storage Fusion, such as replication, erasure coding, and self-healing, to provide resilience and maintain data availability in the event of failures.
+Protect data by enabling encryption for all persistent storage, configuring secure backups, and leveraging snapshots through CSI-integrated storage add-ons. For File Storage on VPC, enforce NFS access with enterprise-grade access controls to ensure secure data sharing across workloads. Use advanced storage capabilities from OpenShift Data Foundation (ODF) such as replication, erasure coding, and self-healing, to provide resilience and maintain data availability in the event of failures.
 
 Finally, strengthen your security posture by integrating IBM Cloud Security and Compliance Center workload protection to enhance governance and ensure continuous compliance. Monitor logs, events, and incidents using IBM QRadar or Cloud Pak for Security to enable proactive threat detection and response. Regularly scan images for vulnerabilities and centralize identity management by integrating with enterprise IAM systems. By adopting these practices, organizations can deploy and operate Red Hat OpenShift Virtualization workloads securely, resiliently, and in alignment with regulatory requirements.
