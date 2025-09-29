@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-09-26"
+lastupdated: "2025-09-29"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -18,7 +18,7 @@ keywords:
 
 [Introduction to Red Hat OpenShift Virtualization](https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html/virtualization/about){: external}
 
-[Installing OpenShift virtualization on IBM Cloud](docs/openshift?topic=openshift-oc-virtualization)
+[Installing OpenShift virtualization on IBM Cloud](/docs/openshift?topic=openshift-oc-virtualization)
 
 [OpenShift Virtualization Architecture Guide](https://access.redhat.com/articles/7119411){: external}
 

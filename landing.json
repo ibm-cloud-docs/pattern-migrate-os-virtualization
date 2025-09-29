@@ -3,7 +3,7 @@
   "title": "Migrating VMware workloads to IBM Cloud Openshift Virtualization",
   "introduction": "This is a reference architecture that describes the deployment architecture for migrating VMware workloads to IBM Cloud OpenShift Virtualization.",
   "product_page": "https://ibm.com/cloud/solution-page",
-  "deployment_url": "https://cloud.ibm.com/catalog/content/url/to/deploy",
+  "deployment_url": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-unique-id",
   "section_topics": {
     "links": [
       {
