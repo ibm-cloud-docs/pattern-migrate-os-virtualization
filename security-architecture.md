@@ -45,7 +45,6 @@ The following are security architecture decisions for the pattern name.
 
 | Architecture decision | Requirement |  Option | Decision | Rationale |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
-| Privileged access management        | - Ensure that all operator actions are run securely through a bastion host \n - Implement session recording to track all activities and note any potential threats \n - Manage access to resources and track commands issued | - BYO Bastion Host \n - BYO Bastion Host with Privileged Access Management (PAM) SW                  | BYO Bastion Host with Privileged Access Management (PAM) SW  | The Bastion Host is a Virtual Server instance that is provisioned through SSH over a private network to securely access resources within IBM Cloud’s private network. Using PAM software is recommended to perform session recording and to help track and manage all access.                      |
 | Identity access & role management (IDM) | Securely authenticate users for platform services and control access to resources consistently across IBM Cloud| IBM Cloud IAM| IBM Cloud IAM| Use IAM access policies to assign users, service IDs, and trusted profiles access to resources within the IBM Cloud account.|
 {: caption="Identity and access management architecture decisions" caption-side="bottom"}
 
