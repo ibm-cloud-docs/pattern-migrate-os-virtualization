@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-26"
+lastupdated: "2025-09-29"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -24,11 +24,11 @@ The migration of VMware workloads to {{site.data.keyword.Bluemix_notm}} OpenShif
 **Discovery and Insights**
 {: \#discovery}
 
-Data is collected across the distributed landscape, VMware Clusters, operations and service management processes. IBM AI powered discovery and assessment tooling (such as CAST, IC4CT) can automate application to infrastructure resource mapping and affiinity, and right-size the target landing zones.
+Data is collected across the distributed landscape, VMware Clusters, operations and service management processes. IBM AI powered discovery and assessment tooling can automate application to infrastructure resource mapping and affiinity, and right-size the target landing zones.
 
 The extract of the VMware platform inventory and compute resource allocation typically uses RVTools.
 
-IBM Turbonomics and Apptio AI-driven tooling can provide insights to right size target landing zones and propose TCO optimization on the OpenShift Virtualization platform.
+IBM AI-driven tooling can provide insights to right size the target landing zones and propose TCO optimization on the OpenShift Virtualization platform.
 
 Identify use case and run proof of concept (POC).
 
