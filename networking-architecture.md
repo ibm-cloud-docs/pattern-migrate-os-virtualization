@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-29"
+lastupdated: "2025-09-30"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -14,7 +14,7 @@ keywords:
 # Architecture decisions for networking
 {: #networking-architecture}
 
-The following tables summarize the networking architecture decisions for migrating VMware workloads to IBM Cloud OpenShift Virtualization.
+The following tables summarizes the networking architecture decisions for migrating VMware workloads to IBM Cloud OpenShift Virtualization.
 
 | Architecture decision                                                      | Requirement                                                                                                             | Option                                                                             | Decision                               | Rationale                                                                                                                                                              |
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

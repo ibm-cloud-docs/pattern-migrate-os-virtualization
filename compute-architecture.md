@@ -14,7 +14,7 @@ keywords:
 # Architecture decisions for compute
 {: #compute-decisions}
 
-The following table summarizes the compute architecture decisions for Migrate VMware to IBM Cloud OpenShift Virtualization deployment guide.
+The following table summarizes the compute architecture decisions for the Migrate VMware to IBM Cloud OpenShift Virtualization deployment guide.
 
 | Architecture decision                   | Requirement                                                                                                                | Options                                                                                                    | Decision                                   | Rationale                                                                                                                                                                                                                                                                                                     |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
