@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-09-29"
+lastupdated: "2025-09-30"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -11,6 +11,8 @@ keywords:
 ---
 
 {{site.data.keyword.attribute-definition-list}}
+
+The following table summarizes the storage architecture decisions for the VMware migrate to IBM Cloud OpenShift Virtualization deployment guide.
 
 # Architecture decisions for storage
 {: #storage-decisions}
