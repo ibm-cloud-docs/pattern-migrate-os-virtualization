@@ -15,7 +15,7 @@ keywords:
 
 
 
-The following are security architecture decisions for the pattern name.
+The following table summarizes the security architecture decisions for the migrate VMware to IBM Cloud OpenShift Virtualization deployment guide.
 
 ## Architecture decisions for data security - encryption
 {: #data-encryption}
