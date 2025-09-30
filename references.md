@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-09-29"
+lastupdated: "2025-09-30"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -23,3 +23,7 @@ keywords:
 [OpenShift Virtualization Architecture Guide](https://access.redhat.com/articles/7119411){: external}
 
 [OpenShift Virtualization - Cluster Sizing Guide (requires Red Hat login)](https://access.redhat.com/articles/7107457){: external}
+
+[Red Hat Learning Path Migrate virtual applications to OpenShift Virtualization](https://developers.redhat.com/learn/openshift/migrate-virtual-applications-red-hat-openshift-virtualization){: external}
+
+[Red Hat Learning Path Manage OpenShift virtual machines with GitOps](https://developers.redhat.com/learn/manage-openshift-virtual-machines-gitops){: external}
