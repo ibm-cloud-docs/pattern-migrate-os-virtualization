@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-09-29"
+lastupdated: "2025-09-30"
 
 subcollection: pattern-migrate-os-virtualization
 
@@ -21,56 +21,60 @@ The migration of VMware workloads to {{site.data.keyword.Bluemix_notm}} OpenShif
 
 ![Migrate VMWare to Openshift Virtualization Phases](images/gmv1.svg){: caption="Migrate VMWare workloads to Openshift Virtualization phased approach" caption-side="bottom"}
 
-**Discovery and Insights**
+The phases and key processes are described below:
+
+**Phase 1 Discovery and Insights**
 {: \#discovery}
 
 Data is collected across the distributed landscape, VMware Clusters, operations and service management processes. IBM AI powered discovery and assessment tooling can automate application to infrastructure resource mapping and affiinity, and right-size the target landing zones.
 
-The extract of the VMware platform inventory and compute resource allocation typically uses RVTools.
+Full VMware platform inventory and compute resource allocation is completed typically using RVTools.
 
-IBM AI-driven tooling can provide insights to right size the target landing zones and propose TCO optimization on the OpenShift Virtualization platform.
+IBM AI-driven tooling provides insights to right size the target landing zones and propose TCO optimization on the OpenShift Virtualization platform.
 
-Identify use case and run proof of concept (POC).
+The proof of concept (POC) use case is defined with success criteria such as performance and availablity validation.
 
-**Design and Pilot**
+The proof of concept (POC) is built and completed.
+
+**Phase 2 Design and Pilot**
 {: \#design}
 
-Design workshop with key infrastructure, operations, workload stakeholders.
+Delivery of design workshop with key infrastructure, operations, workload stakeholders.
 
-Target platform design with performance, scalability, availability, security, regulatory and compliance considerations.
+The target platform design with performance, scalability, availability, security, regulatory and compliance considerations is completed.
 
-Disaster recovery planning based on RTO / RPO requirements.
+Disaster recovery planning based on RTO / RPO requirements is completed.
 
-Migration strategy and program planning with low-risk migration and warm production cutover.
+A migration strategy, program planning and detailed design solution, with low-risk migration and warm production cutover is completed.
 
-Design, build and execute Pilot.
+Design, build and execute of Pilot.
 
-**Build and Code**
+**Phase 3 Build and Code**
 {: \#build}
 
 Build target IBM Cloud OpenShift Virtualization environment (compute, network, storage).
 
-Connectivity linkage between VMware and target OpenShift Virtualization clusters.
+Connectivity linkage between the source VMware platoform and the target OpenShift Virtualization clusters.
 
-Code pre-migration and post migration playbooks.
+Coding of pre-migration and post migration playbooks.
 
-Code day 2 service management playbooks.
+Coding of day 2 service management playbooks.
 
-**Migrate and Manage**
+**Phase 4 Migrate and Manage**
 {: \#migration}
 
 Initial wave migrations for testing and development enviornments.
 
-Validate performance, placement policies and operational model.
+Validation of workload performance, placement policies and the operational model is completed.
 
-**Scale and Decommission**
+**Phase 5 Scale and Decommission**
 {: \#scale}
 
 Complex wave migrations, including UAT environments validating orchestration, integrations under production-like conditions.
 
 Decommision VMware unused infrastructure, ensure secure data disposition, audit traceability and compliance with retention policies.
 
-**Production Cutover and Decommission**
+**Phase 6 Production Cutover and Decommission**
 {: \#cutover}
 
 Ensure production cutover readiness including business continuity and rollback processes.
