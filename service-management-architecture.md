@@ -12,7 +12,7 @@ keywords:
 # Architecture decisions for service management
 {: #service}
 
-The following sections summarize the architecture decisions for service management, when migrating VMware workloads to IBM Cloud OpenShift Virtualization clusters using a virtualization platform modernization strategy and adopting DevSecOps work practices.
+The following sections summarize the architecture decisions for service management, when migrating VMware workloads to IBM Cloud OpenShift Virtualization.
 
 | Architecture decision | Requirement                                                                                                                                                                         | Option                                                          | Decision                      | Rationale                                                                                                                                                                                                        |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
