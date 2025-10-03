@@ -1,0 +1,69 @@
+#  Name your file `toc.yaml`
+#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs-internal/writing?topic=writing-code-nav
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+---
+toc:
+  properties:
+    subcollection: pattern-migrate-os-virtualization
+    href: /docs/pattern-migrate-os-virtualization
+    path: pattern-migrate-os-virtualization
+    audience: solution
+    category: solution_docs
+    content-type: deployment
+    industry: Technology # Replace
+    use-case: Virtualization # Replace
+    compliance: GDPR # Replace
+    deployable: true # Set to true if this is a deployment guide that's associated with a deployable architecture in the catalog
+    description: Migrating VMware vSphere Foundation OpenShift Virtualization # Replace
+    label: Migrating VMware to IBM Cloud OpenShift Virtualization # Replace
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+      - overview.md
+  - navgroup:
+      id: architecture
+      topics:
+      - reference-architecture.md
+  - navgroup:
+      id: plan
+      topics:
+      - topicgroup:
+          label: Design considerations
+          topics:
+          - topic: compute-design.md
+            navtitle: Compute
+          - topic: storage-design.md
+            navtitle: Storage
+          - topic: networking-design.md
+            navtitle: Networking
+          - topic: security-design.md
+            navtitle: Security
+          - topic: service-management-design.md
+            navtitle: Service management
+      - topicgroup:
+          label: Architecture decisions
+          topics:
+          - topic: compute-architecture.md
+            navtitle: Compute
+          - topic: storage-architecture.md
+            navtitle: Storage
+          - topic: networking-architecture.md
+            navtitle: Networking
+          - topic: security-architecture.md
+            navtitle: Security
+          - topic: service-management-architecture.md
+            navtitle: Service management
+      - topicgroup:
+          label: Migration planning
+          topics:
+          - topic: migration-design.md
+            navtitle: Migration
+  - navgroup:
+      id: deploy
+      topics:
+      - how-to.md
+  - navgroup:
+      id: reference
+      topics:
+      - references.md

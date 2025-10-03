@@ -1,0 +1,27 @@
+---
+copyright:
+  years: 2025
+lastupdated: "2025-08-25"
+
+subcollection: pattern-migrate-os-virtualization
+
+keywords:
+
+---
+
+{{site.data.keyword.attribute-definition-list}}
+
+# Overview
+{: #overview}
+
+The objective of this pattern is to provide an {{site.data.keyword.IBM_notm}} solution design and deployment guide for the usage of Red Hat OpenShift Virtualization to migrate existing VMware virtual machine workloads into IBM Cloud Red Hat OpenShift Virtualization.
+
+Red Hat® OpenShift® provides a modern, enterprise-ready infrastructure platform for running virtual machines and container-based applications. Powered by containers, Kubernetes, and DevSecOps capabilities, Red Hat OpenShift is a foundation for rapidly building, deploying, running, and managing both existing and new applications at scale and with security across hybrid, multicloud, and edge environments.
+
+This pattern is intended to:
+
+-   Accelerate and simplify solution design by providing a standard IBM Cloud deployment architecture reference by following the [IBM Architecture Framework](/docs/architecture-framework).
+-   Provide a prescriptive, end-2-end enterprise-class solution design, with diagrams, component architecture decisions along with rationale for cloud component selection to meet enterprise requirements.
+-   Help ensure that requirements can be met from a performance, system availability, and security perspective.
+
+The Architecture Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of aspects and domains, which are architectural areas that run on any technology that need to be considered for any enterprise solution. For more details, see [Introduction to the Architecture Design Framework](/docs/architecture-framework).

@@ -1,0 +1,88 @@
+{
+  "version": 2,
+  "title": "Migrating VMware workloads to IBM Cloud Openshift Virtualization",
+  "introduction": "This is a reference architecture that describes the deployment architecture for migrating VMware workloads to IBM Cloud OpenShift Virtualization.",
+  "product_page": "https://ibm.com/cloud/solution-page",
+  "deployment_url": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-unique-id",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Overview",
+        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-overview"
+      },
+      {
+        "title": "Reference Architecture",
+        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-openshift-virt-arch"
+      },
+      {
+        "title": "Planning",
+        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-compute-design"
+      },
+      {
+        "title": "Deploying",
+        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-unique-id"
+      },
+      {
+        "title": "References",
+        "href": "/docs/pattern-migrate-os-virtualization?topic=pattern-migrate-os-virtualization-references"
+      }
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "Red Hat Migrate from VMware to OpenShift ",
+      "description": "How to migrate VMs from VMware to Red Hat OpenShift Virtualization",
+      "href": "https://www.redhat.com/en/technologies/cloud-computing/openshift/migrate-vmware-to-openshift-virtualization",
+      "type": "blog"
+    },
+    {
+      "title": "Red Hat OpenShift Virtualization - Architecture Guide",
+      "description": "This document provides opinionated architectural guidelines for deploying Red Hat OpenShift as a platform for virtualization workloads using OpenShift Virtualization.",
+      "href": "https://access.redhat.com/sites/default/files/attachments/openshift_virtualization_architecture_guide_v1.0.0.pdf",
+      "type": "blog"
+    }
+  ],
+  "section_architectures": [
+    {
+      "title": "Red Hat OpenShift Container Platform on VPC landing zone ",
+      "href": "/docs/deployable-reference-architectures?topic=deployable-reference-architectures-ocp-ra",
+      "deployable": true
+    },
+    {
+      "title": "Red Hat OpenShift on VPC multiregion DR",
+      "href": "/docs/pattern-openshift-vpc-dr-multiregion?topic=pattern-openshift-vpc-dr-multiregion-Solution-Architecture",
+      "deployable": false
+    },
+    {
+      "title": "Red Hat OpenShift Container Platform on VPC landing zone - QuickStart",
+      "href": "/docs/deployable-reference-architectures?topic=deployable-reference-architectures-roks-ra-qs",
+      "deployable": true
+    },
+    {
+      "title": "Red Hat OpenShift on VPC",
+      "href": "/docs/pattern-openshift-vpc-mz-resiliency?topic=pattern-openshift-vpc-mz-resiliency-openshift-on-vpc",
+      "deployable": false
+    }
+  ],
+  "section_updates": {
+    "view_more": "/docs/openshift?topic=openshift-openshift-relnotes",
+    "tiles": [
+      {
+        "date": "8 August 2025",
+        "title": "You can use trusted profiles to control access to your resources, including components such as Block Storage, File Storage, or Cloud Object"
+      },
+      {
+        "date": "18 July 2025",
+        "title": "Baremetal worker nodes for VPC are now available."
+      },
+      {
+        "date": "27 May 2025",
+        "title": "New! Intel AI Accelerators (Gaudi 3)."
+      },
+      {
+        "date": "21 April 2025",
+        "title": "Virtualize and containerize together: Red Hat OpenShift Virtualization is now available on IBM Cloud"
+      }
+    ]
+  }
+}
