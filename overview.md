@@ -20,8 +20,8 @@ Red Hat® OpenShift® provides a modern, enterprise-ready infrastructure platfor
 
 This pattern is intended to:
 
--   Accelerate and simplify solution design by providing a standard IBM Cloud deployment architecture reference by following the [IBM Architecture Framework](https://cloud.ibm.com/docs/architecture-framework).
+-   Accelerate and simplify solution design by providing a standard IBM Cloud deployment architecture reference by following the [IBM Architecture Framework](/docs/architecture-framework).
 -   Provide a prescriptive, end-2-end enterprise-class solution design, with diagrams, component architecture decisions along with rationale for cloud component selection to meet enterprise requirements.
 -   Help ensure that requirements can be met from a performance, system availability, and security perspective.
 
-The Architecture Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of aspects and domains, which are architectural areas that run on any technology that need to be considered for any enterprise solution. For more details, see [Introduction to the Architecture Design Framework](https://test.cloud.ibm.com/docs/architecture-framework).
+The Architecture Framework provides a consistent approach to design cloud solutions by addressing requirements across a set of aspects and domains, which are architectural areas that run on any technology that need to be considered for any enterprise solution. For more details, see [Introduction to the Architecture Design Framework](/docs/architecture-framework).

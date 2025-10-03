@@ -43,10 +43,10 @@ These managed add-ons enable enterprises to efficiently deploy and manage storag
 **References:**
 {: #references}
 
-[Enable or Disable the IBM managed Storage Add-Ons](docs/openshift?topic=openshift-storage-operator&interface=ui)
+[Enable or Disable the IBM managed Storage Add-Ons](/docs/openshift?topic=openshift-storage-operator&interface=ui)
 
-[IBM Cloud Block Storage for VPC Cluster](docs/openshift?group=setting-up-block-storage-for-vpc)
+[IBM Cloud Block Storage for VPC Cluster](/docs/openshift?group=setting-up-block-storage-for-vpc)
 
-[IBM Cloud File Storage for VPC Cluster](docs/openshift?group=setting-up-file-storage-for-vpc)
+[IBM Cloud File Storage for VPC Cluster](/docs/openshift?group=setting-up-file-storage-for-vpc)
 
-[Red Hat OpenShift Data Foundation for VPC Cluster](docs/openshift?group=setting-up-openshift-data-foundation)
+[Red Hat OpenShift Data Foundation for VPC Cluster](/docs/openshift?group=setting-up-openshift-data-foundation)

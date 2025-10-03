@@ -53,19 +53,19 @@ To install and configure the MTV operator on Red Hat OpenShift cluster, complete
 
 To connect the Red Hat OpenShift Virtualization cluster to the source VMware cluster in either IBM Cloud Classic or the Enterprise location, complete a transit gateway connection.
 
--   [A VPC](https://cloud.ibm.com/docs/transit-gateway?topic=transit-gateway-adding-cross-account-connections&interface=ui#tg-ui-adding-cross-account-connection-transit-gateway) network connection configuration or a [Direct Link](https://cloud.ibm.com/docs/dl?topic=dl-cross-account-virtual-connection-vpc&interface=ui) network configuration.
--   A [Transit Gateway](https://cloud.ibm.com/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway&interface=ui#tg-ui-creating-transit-gateway) request is needed for a network connection to another account
+-   [A VPC](/docs/transit-gateway?topic=transit-gateway-adding-cross-account-connections&interface=ui#tg-ui-adding-cross-account-connection-transit-gateway) network connection configuration or a [Direct Link](/docs/dl?topic=dl-cross-account-virtual-connection-vpc&interface=ui) network configuration.
+-   A [Transit Gateway](/docs/transit-gateway?topic=transit-gateway-ordering-transit-gateway&interface=ui#tg-ui-creating-transit-gateway) request is needed for a network connection to another account
 
 ## Migrating VMWare Instances to Red Hat OpenShift Virtualization
 {: #unique-id-6}
 
-To migrate VMWare Instances for Red Hat OpenShift Virtualization, complete the following steps that are outlined in the [Migrating virtual machines by using the MTV web console.](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console)
+To migrate VMWare Instances for Red Hat OpenShift Virtualization, complete the following steps that are outlined in the [Migrating virtual machines by using the MTV web console.](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console){: external}
 
-1.  Start by adding an [Red Hat OpenShift Virtualization provider](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console#adding-virt-provider_mtv).
-2.  Next, create a [Migration Plan.](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console#creating-migration-plan_mtv)
-3.  Afterward, you can [Run your Migration plan](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console#running-migration-plan_mtv) and view within the MTV web Console.
+1.  Start by adding an [Red Hat OpenShift Virtualization provider](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console#adding-virt-provider_mtv){: external}.
+2.  Next, create a [Migration Plan.](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console#creating-migration-plan_mtv){: external}
+3.  Afterward, you can [Run your Migration plan](https://docs.redhat.com/en/documentation/migration_toolkit_for_virtualization/2.2/html/installing_and_using_the_migration_toolkit_for_virtualization/migrating-vms-web-console#running-migration-plan_mtv){: external} and view within the MTV web Console.
 
 ## Additional references
 {: #unique-id-7}
 
--   [Adding worker nodes to VPC clusters](https://cloud.ibm.com/docs/openshift?topic=openshift-add-workers-vpc)
+-   [Adding worker nodes to VPC clusters](/docs/openshift?topic=openshift-add-workers-vpc)
