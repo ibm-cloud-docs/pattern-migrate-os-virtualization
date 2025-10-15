@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-03"
+lastupdated: "2025-10-15"
 
 keywords:
 
@@ -21,12 +21,12 @@ You can migrate VMWare workloads from on-premises, colocated, or IBM Cloud Class
 
 You need the following items to deploy and configure this reference architecture:
 
--   An [IBM Cloud account](https://cloud.ibm.com/registration)
+-   An [IBM Cloud account](/registration)
 -   [Required IAM access policies](https://github.com/terraform-ibm-modules/terraform-ibm-web-app-mzr-da/tree/main/solutions/e2e#required-iam-access-policies).
 -   A VPC [public and private SSH key pair](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/source/docs/vpc?topic=vpc-ssh-keys&interface=ui) that is not in the deployment region.
 -   An [IBM Cloud API key](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/source/docs/account?topic=account-userapikey&interface=ui) for the user or service ID with the correct IAM access policies.
--   [Secrets Manager Instance](https://cloud.ibm.com/docs/secrets-manager?topic=secrets-manager-create-instance&interface=ui)
--   A [Trusted Profile](https://cloud.ibm.com/docs/secure-enterprise?topic=secure-enterprise-tp-project&interface=ui) for an alternative authentication for project-based access.
+-   [Secrets Manager Instance](/docs/secrets-manager?topic=secrets-manager-create-instance&interface=ui)
+-   A [Trusted Profile](/docs/secure-enterprise?topic=secure-enterprise-tp-project&interface=ui) for an alternative authentication for project-based access.
 -   An understanding of the [Planning for the landing zone deployable architectures](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/source/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-plan).
 
 ## Installing the Red Hat OpenShift Virtualization Operator
@@ -34,7 +34,7 @@ You need the following items to deploy and configure this reference architecture
 
 To install the operator, you must:
 
-1.  Provision [**Cloud Automation for Red Hat OpenShift Virtualization**](https://cloud.ibm.com/catalog/7a4d68b4-cf8b-40cd-a3d1-f49aff526eb3/architecture/deploy-arch-ibm-ocp-virtualization-e4e5b526-5a08-4d63-bea6-04417c30583e-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2c%2Fc2VhcmNoPXZpcnR1YWxpemF0aW9uI3NlYXJjaF9yZXN1bHRz) deployable architecture in a new or existing Project.
+1.  Provision [**Cloud Automation for Red Hat OpenShift Virtualization**](/catalog/7a4d68b4-cf8b-40cd-a3d1-f49aff526eb3/architecture/deploy-arch-ibm-ocp-virtualization-e4e5b526-5a08-4d63-bea6-04417c30583e-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2c%2Fc2VhcmNoPXZpcnR1YWxpemF0aW9uI3NlYXJjaF9yZXN1bHRz) deployable architecture in a new or existing Project.
 2.  After the deployable architecture is added to the project, complete the required and optional parameters.
 
 For the Red Hat OpenShift Virtualization Operator deployable architecture, the following parameters must be set:
