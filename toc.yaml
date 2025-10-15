@@ -1,7 +1,3 @@
-#  Name your file `toc.yaml`
-#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs-internal/writing?topic=writing-code-nav
-#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
----
 toc:
   properties:
     subcollection: pattern-migrate-os-virtualization
@@ -10,12 +6,12 @@ toc:
     audience: solution
     category: solution_docs
     content-type: deployment
-    industry: Technology # Replace
-    use-case: Virtualization # Replace
-    compliance: GDPR # Replace
-    deployable: true # Set to true if this is a deployment guide that's associated with a deployable architecture in the catalog
-    description: Migrating VMware vSphere Foundation OpenShift Virtualization # Replace
-    label: Migrating VMware to IBM Cloud OpenShift Virtualization # Replace
+    industry: Technology
+    use-case: Virtualization
+    compliance: GDPR
+    deployable: true
+    description: Migrating VMware vSphere Foundation OpenShift Virtualization
+    label: Migrating VMware to IBM Cloud OpenShift Virtualization
   entries:
   - navgroup:
       id: overview

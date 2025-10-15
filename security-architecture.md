@@ -2,9 +2,9 @@
 
 copyright:
   years: 2025
-lastupdated: "2023-12-18"
+lastupdated: "2025-10-1"
 
-subcollection: pattern-vpc-vsi-multizone-resiliency
+subcollection: pattern-migrate-os-virtualization
 
 keywords:
 
@@ -59,7 +59,7 @@ The following table summarizes the security architecture decisions for the deplo
 {: caption="Application security architecture decisions" caption-side="bottom"}
 
 ## Architecture decisions for infrastructure and endpoint
-{: #infrastructure and endpoint}
+{: #infrastructure-and-endpoint}
 
 | Architecture decision | Requirement |  Option | Decision | Rationale |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -68,7 +68,7 @@ The following table summarizes the security architecture decisions for the deplo
 {: caption="Infrastructure and endpoint architecture decisions" caption-side="bottom"}
 
 ## Architecture decisions for threat detection and response
-{: #threat detection and response}
+{: #threat-detection-and-response}
 
 | Architecture decision | Requirement |  Option | Decision | Rationale |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -76,7 +76,7 @@ The following table summarizes the security architecture decisions for the deplo
 {: caption="Threat detection and response architecture decisions" caption-side="bottom"}
 
 ## Architecture decisions for governance, risk, and compliance
-{: #governance, risk and compliance}
+{: #governance-risk-and-compliance}
 
 | Architecture decision | Requirement |  Option | Decision | Rationale |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
