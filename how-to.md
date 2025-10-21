@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2025-10-15"
+lastupdated: "2025-10-21"
 
 keywords:
 
@@ -22,12 +22,12 @@ You can migrate VMWare workloads from on-premises, colocated, or IBM Cloud Class
 You need the following items to deploy and configure this reference architecture:
 
 -   An [IBM Cloud account](/registration)
--   [Required IAM access policies](https://github.com/terraform-ibm-modules/terraform-ibm-web-app-mzr-da/tree/main/solutions/e2e#required-iam-access-policies).
--   A VPC [public and private SSH key pair](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/source/docs/vpc?topic=vpc-ssh-keys&interface=ui) that is not in the deployment region.
--   An [IBM Cloud API key](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/source/docs/account?topic=account-userapikey&interface=ui) for the user or service ID with the correct IAM access policies.
+-   [Required IAM access policies](/docs/secure-enterprise?topic=secure-enterprise-userroles).
+-   A VPC [public and private SSH key pair](/docs/vpc?topic=vpc-ssh-keys&interface=ui) that is not in the deployment region.
+-   An [IBM Cloud API key](/docs/secure-enterprise?topic=secure-enterprise-authorize-project) for the user or service ID with the correct IAM access policies.
 -   [Secrets Manager Instance](/docs/secrets-manager?topic=secrets-manager-create-instance&interface=ui)
 -   A [Trusted Profile](/docs/secure-enterprise?topic=secure-enterprise-tp-project&interface=ui) for an alternative authentication for project-based access.
--   An understanding of the [Planning for the landing zone deployable architectures](https://github.ibm.com/cloud-docs-solutions/pattern-webapp-openshift-vpc/blob/source/docs/secure-infrastructure-vpc?topic=secure-infrastructure-vpc-plan).
+-   An understanding of the [Planning for the landing zone deployable architectures](/docs/secure-enterprise?group=planning-and-designing-an-architecture).
 
 ## Installing the Red Hat OpenShift Virtualization Operator
 {: #unique-id-3}
