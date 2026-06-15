@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2025
-lastupdated: "2026-05-08"
+lastupdated: "2026-06-15"
 
 keywords: virtualization, VMware, SDN, NSX, OpenShift
 
@@ -23,7 +23,7 @@ Migrate enterprise production grade VMware workloads from on premises or hypersc
 
 The following diagram shows the high-level reference architecture for this pattern:
 
-![High-level architecture diagram for the Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift Virtualization](/images/overallarchitecture.svg){: caption="Migrate VMware Workloads to IBM Cloud Red Hat OpenShift Virtualization" caption-side="bottom"}
+![High-level architecture diagram for the Migrate VMware Workloads to {{site.data.keyword.Bluemix_notm}} Red Hat OpenShift Virtualization](/images/architecture-overview.svg){: caption="Migrate VMware Workloads to IBM Cloud Red Hat OpenShift Virtualization" caption-side="bottom"}
 
 ## Design scope
 {: #design-scope}
